@@ -83,3 +83,25 @@ body {
     font-size: 80%;
   }
 }
+
+.font-14 {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .font-14 {
+    font-size: calc(14px * 0.9);
+  }
+}
+
+@media (max-width: 640px) {
+  .font-14 {
+    font-size: calc(14px * 0.9);
+  }
+}
+
+@media (max-width: 340px) {
+  .font-14 {
+    font-size: calc(14px * 0.8);
+  }
+}

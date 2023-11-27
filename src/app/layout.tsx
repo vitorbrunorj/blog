@@ -6,6 +6,7 @@ import localFont from 'next/font/local'
 import { cn } from '@/lib/utils'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
+import Favicon from '@/public/favicon.ico'
 
 import { ThemeProvider } from './_components/theme-provider'
 
@@ -46,6 +47,13 @@ export default function RootLayout({
     <html lang="pt-br">
       <Head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <title>Keyko Terapias - Home</title>
+        <meta name="description" content="Curso Full-stack Next.js 14" />
+        <meta
+          name="keywords"
+          content="Next.js, Next.js 14, React.js, Lucas Nhimi, Curso Next.js, JavaScript, TypeScript, Full-stack, Tailwind CSS"
+        />
+        <meta name="robots" content="index, follow" />
       </Head>
       <body
         className={cn(
