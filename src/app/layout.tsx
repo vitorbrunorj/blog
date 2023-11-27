@@ -1,8 +1,11 @@
 import { Analytics } from '@vercel/analytics/react'
+import Head from 'next/head'
 import type { Metadata } from 'next'
-import { Inter as FontSans } from 'next/font/google'
+import { Open_Sans as FontSans } from 'next/font/google'
 import localFont from 'next/font/local'
 import { cn } from '@/lib/utils'
+import { Header } from '@/components/header'
+import { Footer } from '@/components/footer'
 
 import { ThemeProvider } from './_components/theme-provider'
 
@@ -19,7 +22,7 @@ const fontHeading = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'The Next Dev - Full-stack Next.js 14',
+  title: 'Keyko Terapias - Home',
   description: 'Curso Full-stack Next.js 14',
   keywords: [
     'Next.js',
@@ -40,7 +43,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
+      <Head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </Head>
       <body
         className={cn(
           'min-h-screen bg-background font-sans antialiased',
@@ -49,8 +55,10 @@ export default function RootLayout({
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Header />
           {children}
           <Analytics />
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

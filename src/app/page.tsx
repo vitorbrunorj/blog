@@ -21,13 +21,7 @@ export default function Home() {
           .
         </p>
       </div> */}
-      <main className="pt-20 md:pt-18">
-        <IntroSection />
-        <AboutSection />
-        <FeatureSection />
-        <InvestmentSection />
-        <FaqSection />
-      </main>
+      <main className="pt-20 md:pt-18 "></main>
     </>
   )
 }
