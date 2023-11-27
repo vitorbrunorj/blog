@@ -45,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <Head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="./favicon.ico" type="image/ico" />
         <title>Keyko Terapias - Home</title>
         <meta name="description" content="Curso Full-stack Next.js 14" />
         <meta

@@ -17,7 +17,7 @@ export function Header() {
       {/* Header superior */}
       <div className="grid bg-light ">
         <div className="container">
-          <div className="h-r36px hidden sm:flex flex flex-wrap px-2 justify-around">
+          <div className="h-9 hidden lg:flex flex-wrap px-2 justify-around">
             <div className="flex opacity-80 items-center space-x-2 ">
               <Link href="https://www.facebook.com/your-facebook-page">
                 <a target="_blank" rel="noopener noreferrer"></a>
@@ -35,7 +35,6 @@ export function Header() {
                 <a target="_blank" rel="noopener noreferrer"></a>
                 <SiGmail className="text-lg" color="#D44638" />
               </Link>
-
               <Link href="https://www.telegram.com/your-telegram-page">
                 <a target="_blank" rel="noopener noreferrer"></a>
                 <FaTelegram className="text-lg" color="#0088cc" />
@@ -46,14 +45,15 @@ export function Header() {
               </Link>
             </div>
 
-            <div className="sm:flex text-black text-xs  font-light tracking-widest text-shadow items-center px-2 py-2 space-x-2">
+            <div className="sm:flex text-black text-xs font-light tracking-widest text-shadow items-center px-2 py-2 space-x-2">
               <div className="text-gray-600">
                 <BsFillTelephoneFill />
               </div>
               <span>Telefone: (21) 98094-3965 </span>
             </div>
 
-            <div className="md:flex text-black text-xs  font-light tracking-wide text-shadow items-center px-2 space-x-2">
+            <div className="hidden lg:flex text-black text-xs font-light tracking-wide text-shadow items-center px-2 space-x-2">
+              {' '}
               <div className="text-gray-600 ">
                 <FaLocationDot />
               </div>
@@ -69,7 +69,7 @@ export function Header() {
       {/* Header Inferior */}
 
       <div className="grid text-white font-medium tracking-wider bg-primary sticky top-0">
-        <div className="container h-r60px flex items-center justify-between px-2 py-2">
+        <div className="container h-16 flex items-center justify-between px-2 py-2">
           <Link href="/">
             <Image
               src={logo}
