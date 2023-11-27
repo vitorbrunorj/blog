@@ -6,7 +6,6 @@ import localFont from 'next/font/local'
 import { cn } from '@/lib/utils'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
-import Favicon from '@/public/favicon.ico'
 
 import { ThemeProvider } from './_components/theme-provider'
 

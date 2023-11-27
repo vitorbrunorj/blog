@@ -53,7 +53,7 @@ export function Header() {
               <span>Telefone: (21) 98094-3965 </span>
             </div>
 
-            <div className="hidden lg:flex text-black text-xs  font-light tracking-wide text-shadow items-center px-2 space-x-2">
+            <div className="md:flex text-black text-xs  font-light tracking-wide text-shadow items-center px-2 space-x-2">
               <div className="text-gray-600 ">
                 <FaLocationDot />
               </div>
