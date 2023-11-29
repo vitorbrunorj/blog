@@ -25,7 +25,6 @@ export default function Home() {
                   src={banner}
                   alt="Keyko Terapias logo"
                   height={540}
-                  layout="intrinsic"
                 />
               </Link>
             </div>
