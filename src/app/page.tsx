@@ -7,13 +7,17 @@ export default function Home() {
     <main>
       <div className="flex bg-gradient-to-b from-primary to-white">
         <div className="container">
-          <div className="flex flex-col sm:flex-row justify-between items-center">
+          <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex flex-col justify-center items-center flex-1 py-4 h-full">
-              <h1 className="text-slate-50 text-5xl tracking-wider h-full">
-                Bem-vindo à Jornada de Transformação
+              <h1 className="py-4 text-slate-50 text-4xl xl:text-5xl tracking-wider h-full">
+                Bem-vindo à Jornada
                 <br />
-                <span className="text-slate-800 text-4xl font-heading font-semibold tracking-wider">
-                  com Elaine Keyko, Terapeuta Integrativa!
+                de Transformação
+                <br />
+                <span className="text-slate-800 text-3xl xl:text-4xl  font-heading font-semibold tracking-wider">
+                  com Elaine Keyko,
+                  <br />
+                  Terapeuta Integrativa!
                 </span>
               </h1>
             </div>
@@ -24,7 +28,6 @@ export default function Home() {
                   className="object-cover"
                   src={banner}
                   alt="Keyko Terapias logo"
-                  height={540}
                 />
               </Link>
             </div>
