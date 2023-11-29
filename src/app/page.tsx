@@ -1,27 +1,70 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+import Link from 'next/link'
 import Image from 'next/image'
-
-import IntroSection from './_components/intro-section'
-import AboutSection from './_components/about-section'
-import FeatureSection from './_components/feature-section'
-import InvestmentSection from './_components/investment-section'
-import FaqSection from './_components/faq-section'
+import banner from '@/public/banner.png'
 
 export default function Home() {
   return (
-    <>
-      {/* <div className='fixed h-18 md:h-12 text-sm md:text-base p-4 flex justify-center items-center group bg-gradient-to-r from-primary to-secondary w-full z-10'>
-        <p className='text-white'>
-          Utilize o cupom{' '}
-          <span className='font-mono font-bold'>COMUNIDADETND</span> e ganhe 50%
-          de desconto. Valor à vista de{' '}
-          <span className='font-mono font-bold'>
-            R$ 489,00 ou 12x de R$ 48,81
-          </span>{' '}
-          .
-        </p>
-      </div> */}
-      <main className="pt-20 md:pt-18 "></main>
-    </>
+    <main>
+      <div className="flex bg-gradient-to-b from-primary to-white">
+        <div className="container">
+          <div className="flex flex-col sm:flex-row justify-between items-center">
+            <div className="flex flex-col justify-center items-center flex-1 py-4">
+              <h2 className="text-slate-50  text-5xl tracking-wider h-full">
+                Bem-vindo à Jornada de Transformação
+              </h2>
+              <h1 className="text-slate-800 text-4xl font-heading font-semibold tracking-wider">
+                com Elaine Keyko, Terapeuta Integrativa!
+              </h1>
+            </div>
+
+            <div className="flex flex-col justify-end flex-1">
+              <Link href="/">
+                <Image
+                  className="object-cover h-full"
+                  src={banner}
+                  alt="Keyko Terapias logo"
+                  layout="intrinsic"
+                />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="w-[350px] mx-auto text-center">
+        <h1 className="px-7 py-10 text-base tracking-wider h-full">
+          Olá, sou Elaine Keyko, Terapeuta Integrativa, dedicada a conduzir
+          indivíduos em uma jornada de autodescoberta e libertação. Minha
+          abordagem valoriza a integralidade biopsicossocial, fundamentada em
+          uma visão holística.
+        </h1>
+      </div>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <div>
+        <h1 className="text-base font-bold tracking-wider text-black h-full">
+          Ofereço uma abordagem única, combinando a experiência da minha
+          formação acadêmica com as transformações pessoais vividas através das
+          Terapias Integrativas. O objetivo é auxiliar na superação de
+          obstáculos emocionais e permitir a manifestação da melhor versão de
+          cada
+        </h1>
+      </div>
+    </main>
   )
 }
