@@ -96,12 +96,7 @@ export function Header() {
             >
               Sobre
             </Link>
-            <Link
-              href="/agendamento"
-              className=" transition ease-in-out duration-1200 hover:text-secondary hover:scale-110"
-            >
-              Agendamento
-            </Link>
+
             <Link
               href="/servicos"
               className=" transition ease-in-out duration-1200 hover:text-secondary hover:scale-110"
@@ -121,9 +116,10 @@ export function Header() {
               Blog
             </Link>
           </div>
-
-          <div className="flex flex-grow justify px-2 space-x-5 font-heading">
-            <ModeToggle />
+          <div className="flex flex-grow justify text-xs px-2 space-x-5 font-heading justify-center sm:justify-start">
+            <span className="flex items-center">
+              <ModeToggle />
+            </span>
           </div>
 
           <div className="sm:hidden py-1 px-1">
