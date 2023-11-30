@@ -90,6 +90,7 @@ export function Header() {
             >
               Home
             </Link>
+
             <Link
               href="/sobre"
               className=" transition ease-in-out duration-1200 hover:text-secondary hover:scale-110"
@@ -98,7 +99,7 @@ export function Header() {
             </Link>
 
             <Link
-              href="/servicos"
+              href="/"
               className=" transition ease-in-out duration-1200 hover:text-secondary hover:scale-110"
             >
               Serviços
@@ -116,7 +117,7 @@ export function Header() {
               Blog
             </Link>
           </div>
-          <div className="flex flex-grow justify text-xs px-2 space-x-5 font-heading justify-center sm:justify-start">
+          <div className="flex flex-grow justify  text-xs px-2 space-x-5 font-heading justify-center sm:justify-start">
             <span className="flex items-center">
               <ModeToggle />
             </span>
