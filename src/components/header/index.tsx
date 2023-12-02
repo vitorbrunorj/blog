@@ -16,10 +16,11 @@ export function Header() {
   return (
     <header>
       {/* Header superior */}
-      <section className="grid">
+
+      <section className="grid bg-slate-50">
         <div className="container">
-          <div className="h-8 hidden lg:flex flex-wrap px-2 justify-around">
-            <div className="flex opacity-80 items-center space-x-2 ">
+          <div className="h-8 hidden lg:flex flex-wrap justify-between sticky top-0">
+            <div className="flex opacity-80 items-center space-x-2">
               <Link href="https://www.facebook.com/your-facebook-page">
                 <a target="_blank" rel="noopener noreferrer"></a>
                 <FaFacebookSquare className="text-lg" color="#3b5998" />
@@ -69,8 +70,8 @@ export function Header() {
 
       {/* Header Inferior */}
 
-      <section className="grid text-white font-medium tracking-wider bg-primary sticky top-0">
-        <div className="container h-14 flex items-center justify-between px-2 py-2">
+      <section className="grid text-white font-medium tracking-wider bg-primary">
+        <div className="container mx-auto h-14 flex items-center justify-between px-2 py-2 sticky top-0">
           <div className="flex w-28 ">
             <Link href="/">
               <Image
@@ -99,7 +100,7 @@ export function Header() {
             </Link>
 
             <Link
-              href="/"
+              href="/servicos"
               className=" transition ease-in-out duration-1200 hover:text-secondary hover:scale-110"
             >
               Serviços

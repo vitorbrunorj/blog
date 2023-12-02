@@ -16,7 +16,7 @@
     --secondary-foreground: 220.9 39.3% 11%;
     --muted: 163.16, 52.29%, 61.37%;
     --muted-foreground: 220 8.9% 46.1%;
-    --accent: 163.16, 52.29%, 61.37%;
+    --accent: 160, 51%, 82%; /* cor de fundo dos icones */
     --accent-foreground: 220.9 39.3% 11%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 20% 98%;
@@ -39,7 +39,7 @@
     --secondary-foreground: 210 20% 98%;
     --muted: 215 27.9% 16.9%;
     --muted-foreground: 217.9 10.6% 64.9%;
-    --accent: 215 27.9% 16.9%;
+    --accent: 120, 33%, 9%; /* cor de fundo dos icones */
     --accent-foreground: 210 20% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 20% 98%;
@@ -59,7 +59,7 @@
 }
 
 body {
-  min-width: 320px;
+  min-width: 336px;
 }
 
 body {
@@ -92,6 +92,39 @@ body {
 
 @media (max-width: 360px) {
   html {
-    font-size: 80%;
+    font-size: 77.5%;
   }
+}
+
+.container2 {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 1400px) {
+  .container2 {
+    max-width: 1400px;
+  }
+}
+
+.w-97 {
+  width: 27rem /* 384px */;
+}
+
+.sticky-container {
+  position: relative;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar2 {
+  position: fixed;
+  top: 32px;
+  width: 100%;
+  z-index: 1;
 }
