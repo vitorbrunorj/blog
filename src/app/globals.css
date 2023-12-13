@@ -66,33 +66,75 @@ body {
   font-size: 100%;
 }
 
-@media (max-width: 840px) {
-  html {
-    font-size: 95%;
-  }
-}
-
-@media (max-width: 720px) {
+@media (max-width: 1100px) {
   html {
     font-size: 90%;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1020px) {
   html {
-    font-size: 87.5%;
+    font-size: 100%;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 720px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  html {
+    font-size: 95%;
+  }
+}
+
+@media (max-width: 530px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 500px) {
   html {
     font-size: 85%;
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 480px) {
   html {
-    font-size: 77.5%;
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 460px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 440px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 67%;
+  }
+}
+
+@media (max-width: 420px) {
+  html {
+    font-size: 63%;
+  }
+}
+
+@media (max-width: 380px) {
+  html {
+    font-size: 60%;
   }
 }
 
@@ -101,9 +143,25 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+
 @media (min-width: 1400px) {
   .container2 {
     max-width: 1400px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container3 {
+    max-width: 2800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container4 {
+    max-width: 1400px;
+    margin-left: auto;
   }
 }
 

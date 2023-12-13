@@ -2,6 +2,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import logo from '@/public/logo.svg'
 
+import { FaYoutube } from 'react-icons/fa6'
+
 import {
   FaFacebookSquare,
   FaInstagramSquare,
@@ -38,7 +40,6 @@ export function Footer() {
                 </address>
               </section>
               <SiteLinks />
-              <ServiceLinks />
               <SocialLinks />
             </nav>
           </div>
@@ -60,42 +61,20 @@ function SiteLinks() {
     <div className="hidden sm:flex flex-col ">
       <h2 className="font-heading tracking-widest">Site</h2>
       <ul className="py-1 text-xs sm:text-sm font-light tracking-wide flex-col items-center flex-grow">
-        <li className="transform transition-transform duration-200  hover:text-secondary">
+        <li className="transform transition-transform duration-200  hover:text-secondary hover:scale-110 hover:font-semibold">
           <Link href="/">Home</Link>
         </li>
-        <li className="transform transition-transform duration-200  hover:text-secondary">
+        <li className="transform transition-transform duration-200  hover:text-secondary hover:scale-110 hover:font-semibold">
           <Link href="/sobre">Sobre</Link>
         </li>
-        <li className="transform transition-transform duration-200  hover:text-secondary">
-          <Link href="/agendamento">Agendamento</Link>
-        </li>
-        <li className="transform transition-transform duration-200  hover:text-secondary">
+        <li className="transform transition-transform duration-200  hover:text-secondary hover:scale-110 hover:font-semibold">
           <Link href="/servicos">Serviços</Link>
         </li>
-        <li className="transform transition-transform duration-200  hover:text-secondary">
-          <Link href="/contatos">Contatos</Link>
-        </li>
-        <li className="transform transition-transform duration-200  hover:text-secondary">
+        <li className="transform transition-transform duration-200  hover:text-secondary hover:scale-110 hover:font-semibold">
           <Link href="/blog">Blog</Link>
         </li>
-      </ul>
-    </div>
-  )
-}
-
-function ServiceLinks() {
-  return (
-    <div className="hidden lg:flex flex-col">
-      <h2 className="flex text-base font-heading tracking-widest">Serviços</h2>
-      <ul className="py-1 text-sm font-light tracking-wide">
-        <li className="transform transition-transform duration-200  hover:text-secondary">
-          <Link href="/">Serviço 1</Link>
-        </li>
-        <li className="transform transition-transform duration-200  hover:text-secondary">
-          <Link href="/">Serviço 2</Link>
-        </li>
-        <li className="transform transition-transform duration-200  hover:text-secondary">
-          <Link href="/">Serviço 3</Link>
+        <li className="transform transition-transform duration-200  hover:text-secondary hover:scale-110 hover:font-semibold">
+          <Link href="/contatos">Contatos</Link>
         </li>
       </ul>
     </div>
@@ -110,26 +89,72 @@ function SocialLinks() {
         <section className="flex space-x-3">
           <li>
             <Link href="https://www.facebook.com/your-facebook-page">
-              <a target="_blank" rel="noopener noreferrer"></a>
-              <FaFacebookSquare className="text-lg" color="#3b5998" />
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.facebook.com/your-facebook-page"
+              ></a>
+              <FaFacebookSquare
+                className="text-lg transition-all duration-200 hover:scale-125"
+                color="#3b5998"
+                alt="Facebook"
+              />
             </Link>
           </li>
           <li>
-            <Link href="https://www.instagram.com/your-facebook-page">
-              <a target="_blank" rel="noopener noreferrer"></a>
-              <FaInstagramSquare className="text-lg" color="#E1306C" />
+            <Link href="https://www.instagram.com/keykoterapias/">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/keykoterapias/"
+              ></a>
+              <FaInstagramSquare
+                className="text-lg transition-all duration-200 hover:scale-125"
+                color="#E1306C"
+                alt="Instagram"
+              />
             </Link>
           </li>
           <li>
-            <Link href="https://www.whatsapp.com/your-facebook-page">
-              <a target="_blank" rel="noopener noreferrer"></a>
-              <FaWhatsappSquare className="text-lg" color="#25D366" />
+            <Link href="https://api.whatsapp.com/send/?phone=5521980943935&text&type=phone_number&app_absent=0">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://api.whatsapp.com/send/?phone=5521980943935&text&type=phone_number&app_absent=0"
+              ></a>
+              <FaWhatsappSquare
+                className="text-lg transition-all duration-200 hover:scale-125"
+                color="#25D366"
+                alt="Whatsapp"
+              />
+            </Link>
+          </li>
+          <li>
+            <Link href="https://www.youtube.com/@keikoterapiasintegrativas9086">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.youtube.com/@keikoterapiasintegrativas9086"
+              ></a>
+              <FaYoutube
+                className="text-lg transition-all duration-200 hover:scale-125"
+                color="#FF0000"
+                alt="Youtube"
+              />
             </Link>
           </li>
           <li>
             <Link href="https://www.gmail.com/your-facebook-page">
-              <a target="_blank" rel="noopener noreferrer"></a>
-              <SiGmail className="text-lg" color="#D44638" />
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.gmail.com/your-facebook-page"
+              ></a>
+              <SiGmail
+                className="text-lg transition-all duration-200 hover:scale-125"
+                color="#D44638"
+                alt="Gmail"
+              />
             </Link>
           </li>
         </section>

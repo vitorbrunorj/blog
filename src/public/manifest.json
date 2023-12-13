@@ -1,0 +1,16 @@
+{
+  "name": "Site Elaine Keyko Terapias Integrativas",
+  "short_name": "Elaine Keyko Terapias Integrativas",
+  "description": "Elaine Keyko Terapias Integrativas: um espaço dedicado à promoção do bem-estar e desenvolvimento pessoal por meio de abordagens holísticas e terapias integrativas. Conduzido por Elaine Keyko, terapeuta holística.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7fafc",
+  "theme_color": "#d06985",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "192x192",
+      "type": "image/x-icon"
+    }
+  ]
+}

@@ -46,6 +46,7 @@ export default function RootLayout({
     <html lang="pt-br">
       <Head>
         <link rel="icon" href="./favicon.ico" type="image/ico" />
+        <link rel="manifest" href="../public/manifest.json" />
 
         <meta name="description" content="Curso Full-stack Next.js 14" />
         <meta

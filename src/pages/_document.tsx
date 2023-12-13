@@ -1,3 +1,4 @@
+// Importe os módulos necessários do Next.js
 import Document, {
   Html,
   Head,
@@ -7,6 +8,7 @@ import Document, {
 } from 'next/document'
 import Script from 'next/script'
 
+// Defina a interface para as props do seu documento
 interface MyDocumentProps {
   url: string
   ogImage: string
@@ -16,9 +18,11 @@ interface MyDocumentProps {
 }
 
 class MyDocument extends Document<MyDocumentProps> {
+  // Use o método getInitialProps para obter as props iniciais
   static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx)
 
+    // Retorne as props iniciais e adicione as personalizadas
     return {
       ...initialProps,
       title: 'Curso Full-stack Next.js 14',
@@ -34,7 +38,9 @@ class MyDocument extends Document<MyDocumentProps> {
       <Html lang="pt-br">
         <Head>
           <meta charSet="UTF-8" />
-          <link rel="icon" href="./favicon.ico" type="image/ico" />
+          <link rel="icon" href="/favicon.ico" type="image/ico" />
+
+          <link rel="manifest" href="../public/manifest.json" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="theme-color" content="#000000" />
           <meta name="description" content={this.props.description} />
@@ -92,7 +98,7 @@ class MyDocument extends Document<MyDocumentProps> {
               !function(f,b,e,v,n,t,s)
               {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
               n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-              if(!f._fbq)f     _fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
               n.queue=[];t=b.createElement(e);t.async=!0;
               t.src=v;s=b.getElementsByTagName(e)[0];
               s.parentNode.insertBefore(t,s)}(window, document,'script',
