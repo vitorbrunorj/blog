@@ -74,7 +74,7 @@ export default function Home() {
 
       <section className="container2 px-2 mx-auto text-center">
         <div className="mx-auto">
-          <h3 className="leading-relaxed text-base text-center font-light tracking-wider py-6 ">
+          <h2 className="leading-relaxed text-base text-center font-light tracking-wider py-6 ">
             Olá, sou Elaine Keyko, Terapeuta Integrativa, <br />
             dedicada a conduzir indivíduos em uma
             <br />
@@ -97,7 +97,7 @@ export default function Home() {
             e permitir a manifestação da melhor
             <br />
             versão de cada indivíduo.
-          </h3>
+          </h2>
         </div>
       </section>
       <section className="container2 flex">
@@ -119,12 +119,12 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           <div className="bg-white rounded-lg shadow-md transform hover:scale-105 transition duration-200 hover:bg-pink-50">
             <div className="p-5">
-              <h5 className="font-heading text-slate-700 text-center text-2xl tracking-wider font-semibold p-2">
+              <h3 className="font-heading text-slate-700 text-center text-2xl tracking-wider font-semibold p-2">
                 <span className="flex items-center justify-center py-4">
                   <FaCompass size={40} />
                 </span>
                 Jornada Personalizada
-              </h5>
+              </h3>
               <p className="text-gray-500 mb-4 text-center">
                 Orientação única para sua evolução. <br />
                 Cada sessão é moldada para desbloquear <br />
@@ -134,12 +134,12 @@ export default function Home() {
           </div>
           <div className="bg-white rounded-lg shadow-md transform hover:scale-105 transition duration-200 hover:bg-pink-50 hover:opacity-90">
             <div className="p-5">
-              <h5 className="font-heading text-slate-700 text-center text-2xl tracking-wider font-semibold p-2">
+              <h3 className="font-heading text-slate-700 text-center text-2xl tracking-wider font-semibold p-2">
                 <span className="flex items-center justify-center py-4">
                   <PiFlowerLotusFill size={40} />
                 </span>
                 Transformação Interior
-              </h5>
+              </h3>
               <p className="text-gray-500 mb-4 text-center">
                 Como uma flor que desabrocha, <br />
                 liberte-se de bloqueios emocionais <br />e descubra uma nova
@@ -149,12 +149,12 @@ export default function Home() {
           </div>
           <div className="bg-white rounded-lg shadow-md transform hover:scale-105 transition duration-200 hover:bg-pink-50 hover:opacity-90">
             <div className="p-5">
-              <h5 className="font-heading text-slate-700 text-center text-2xl tracking-wider font-semibold p-2">
+              <h3 className="font-heading text-slate-700 text-center text-2xl tracking-wider font-semibold p-2">
                 <span className="flex items-center justify-center py-4">
                   <GiLifeInTheBalance size={40} />
                 </span>
                 Equilíbrio Holístico
-              </h5>
+              </h3>
               <p className="text-gray-500 mb-4 text-center">
                 Integro mente, corpo e espírito <br />
                 para uma jornada completa <br />
@@ -164,12 +164,12 @@ export default function Home() {
           </div>
           <div className="bg-white rounded-lg shadow-md transform hover:scale-105 transition duration-200 hover:bg-pink-50 hover:opacity-90">
             <div className="p-5">
-              <h5 className="font-heading text-slate-700 text-center text-2xl tracking-wider font-semibold p-2">
+              <h3 className="font-heading text-slate-700 text-center text-2xl tracking-wider font-semibold p-2">
                 <span className="flex items-center justify-center py-4">
                   <PiHandsPrayingFill size={40} />
                 </span>
                 Conexão Espiritual
-              </h5>
+              </h3>
               <p className="text-gray-500 mb-4 text-center">
                 Alcance um nível mais profundo <br />
                 de autoconhecimento, <br />
@@ -179,12 +179,12 @@ export default function Home() {
           </div>
           <div className="bg-white rounded-lg shadow-md transform hover:scale-105 transition duration-200 hover:bg-pink-50 hover:opacity-90">
             <div className="p-5">
-              <h5 className="font-heading text-slate-700 text-center text-2xl tracking-wider font-semibold p-2">
+              <h3 className="font-heading text-slate-700 text-center text-2xl tracking-wider font-semibold p-2">
                 <span className="flex items-center justify-center py-4">
                   <GiBrain size={40} />
                 </span>
                 Resiliência Emocional
-              </h5>
+              </h3>
               <p className="text-gray-500 mb-4 text-center">
                 Fortaleça-se emocionalmente <br />
                 como uma árvore resistente,
@@ -195,12 +195,12 @@ export default function Home() {
           </div>
           <div className="bg-white rounded-lg shadow-md transform hover:scale-105 transition duration-200 hover:bg-pink-50 hover:opacity-90">
             <div className="p-5">
-              <h5 className="font-heading text-slate-700 text-center text-2xl tracking-wider font-semibold p-2">
+              <h3 className="font-heading text-slate-700 text-center text-2xl tracking-wider font-semibold p-2">
                 <span className="flex items-center justify-center py-4">
                   <BsPersonArmsUp size={40} />
                 </span>
                 Empoderamento Pessoal
-              </h5>
+              </h3>
               <p className="text-gray-500 mb-4 text-center">
                 Capacito você a manifestar sua melhor versão. <br />A
                 transformação começa <br />
@@ -242,9 +242,9 @@ export default function Home() {
               </p>
               <Link
                 href="/contatos"
-                className="inline-block bg-secondary text-center py-2 px-4 text-white font-semibold tracking-wider rounded-full transition-colors duration-400 hover:bg-white hover:text-primary transform hover:scale-105"
+                className="inline-block bg-white text-center py-2 px-4 text-primary font-bold tracking-wider rounded-full transition-colors duration-400 hover:bg-white hover:text-primary transform hover:scale-105"
               >
-                Ver Curso
+                VER CURSO
               </Link>
             </div>
           </div>
@@ -311,7 +311,7 @@ export default function Home() {
           <h3 className="font-bold mt-4 text-slate-700 tracking-wider font-heading text-lg py-2">
             2. Abordagem Personalizada:
           </h3>
-          <p>
+          <p suppressHydrationWarning={true}>
             Sua jornada é única, e nossa abordagem é moldada para atender <br />
             especificamente às suas necessidades individuais.
           </p>
@@ -323,7 +323,7 @@ export default function Home() {
           <h3 className="font-bold mt-4 text-slate-700 tracking-wider font-heading text-lg py-2">
             3. Integralidade Biopsicossocial:
           </h3>
-          <p>
+          <p suppressHydrationWarning={true}>
             Enxergamos você em sua totalidade, reconhecendo a interconexão entre
             corpo, mente e espírito.
           </p>
@@ -335,7 +335,7 @@ export default function Home() {
           <h3 className="font-bold mt-4 text-slate-700 tracking-wider font-heading text-lg py-2">
             4. Apoio Contínuo:
           </h3>
-          <p>
+          <p suppressHydrationWarning={true}>
             Nosso compromisso transcende as sessões individuais; <br />
             estamos aqui para apoiá-lo ao longo de sua jornada contínua.
           </p>
@@ -348,7 +348,7 @@ export default function Home() {
           <h3 className="font-bold mt-4 text-slate-700 tracking-wider font-heading text-lg py-2">
             5. Sementes de Empoderamento:
           </h3>
-          <p>
+          <p suppressHydrationWarning={true}>
             Plantamos sementes de empoderamento, nutrindo a autonomia <br />e a
             capacidade de autorregulação.
           </p>
@@ -378,7 +378,7 @@ export default function Home() {
         </h2>
         <div className="">
           <div>
-            <p>
+            <p suppressHydrationWarning={true}>
               Você está pronto para embarcar em uma jornada de autodescoberta e
               transformação? <br />
               Elaine Keyko está aqui para guiá-lo nesse caminho único e pessoal.
@@ -406,7 +406,7 @@ export default function Home() {
             <div className="flex justify-center">
               <a
                 href="https://api.whatsapp.com/send/?phone=5521980943935&text&type=phone_number&app_absent=0"
-                className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-block transition-all duration-200 hover:scale-105"
+                className="mt-4 bg-primary text-white font-bold py-2 px-4 tracking-wider rounded inline-block transition-all duration-200 hover:scale-105"
               >
                 Agende uma Sessão
               </a>

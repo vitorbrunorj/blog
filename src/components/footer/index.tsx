@@ -29,14 +29,26 @@ export function Footer() {
                   />
                 </Link>
 
-                <p className=" pt-2 tracking-wide text-xs sm:text-sm">
+                <p
+                  suppressHydrationWarning={true}
+                  className=" pt-2 tracking-wide text-xs sm:text-sm"
+                >
                   Tel: (21) 98094-3965
                 </p>
-                <p className="py-2 text-xs sm:text-sm">exemplo@empresa.com</p>
+                <p
+                  suppressHydrationWarning={true}
+                  className="py-2 text-xs sm:text-sm"
+                >
+                  exemplo@empresa.com
+                </p>
                 <address className="text-xs sm:text-sm">
                   {' '}
-                  <p>Rua Visc. de Pirajá, 572 - 6º andar</p>
-                  <p>Ipanema, Rio de Janeiro - RJ</p>
+                  <p suppressHydrationWarning={true}>
+                    Rua Visc. de Pirajá, 572 - 6º andar
+                  </p>
+                  <p suppressHydrationWarning={true}>
+                    Ipanema, Rio de Janeiro - RJ
+                  </p>
                 </address>
               </section>
               <SiteLinks />
@@ -49,7 +61,9 @@ export function Footer() {
       <div className=" ">
         <div className="container flex items-center justify-center px-2 py-2 h-8 ">
           <hr />
-          <p>© 2023 Keyko Terapias - Created by Vitor Bruno </p>
+          <p suppressHydrationWarning={true}>
+            © 2023 Keyko Terapias - Created by Vitor Bruno{' '}
+          </p>
         </div>
       </div>
     </>
@@ -85,79 +99,72 @@ function SocialLinks() {
   return (
     <div>
       <h2 className="font-heading tracking-widest">Siga-nos</h2>
-      <ul className="flex py-2 bg-slate-50 p-2 rounded-full">
-        <section className="flex space-x-3">
-          <li>
-            <Link href="https://www.facebook.com/your-facebook-page">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.facebook.com/your-facebook-page"
-              ></a>
-              <FaFacebookSquare
-                className="text-lg transition-all duration-200 hover:scale-125"
-                color="#3b5998"
-                alt="Facebook"
-              />
-            </Link>
-          </li>
-          <li>
-            <Link href="https://www.instagram.com/keykoterapias/">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.instagram.com/keykoterapias/"
-              ></a>
-              <FaInstagramSquare
-                className="text-lg transition-all duration-200 hover:scale-125"
-                color="#E1306C"
-                alt="Instagram"
-              />
-            </Link>
-          </li>
-          <li>
-            <Link href="https://api.whatsapp.com/send/?phone=5521980943935&text&type=phone_number&app_absent=0">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://api.whatsapp.com/send/?phone=5521980943935&text&type=phone_number&app_absent=0"
-              ></a>
-              <FaWhatsappSquare
-                className="text-lg transition-all duration-200 hover:scale-125"
-                color="#25D366"
-                alt="Whatsapp"
-              />
-            </Link>
-          </li>
-          <li>
-            <Link href="https://www.youtube.com/@keikoterapiasintegrativas9086">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.youtube.com/@keikoterapiasintegrativas9086"
-              ></a>
-              <FaYoutube
-                className="text-lg transition-all duration-200 hover:scale-125"
-                color="#FF0000"
-                alt="Youtube"
-              />
-            </Link>
-          </li>
-          <li>
-            <Link href="https://www.gmail.com/your-facebook-page">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.gmail.com/your-facebook-page"
-              ></a>
-              <SiGmail
-                className="text-lg transition-all duration-200 hover:scale-125"
-                color="#D44638"
-                alt="Gmail"
-              />
-            </Link>
-          </li>
-        </section>
+      <ul className="flex py-2 bg-slate-50 p-2 space-x-2 rounded-full">
+        <li>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.facebook.com/your-facebook-page"
+            aria-label="Facebook"
+          ></a>
+          <FaFacebookSquare
+            className="text-lg transition-all duration-200 hover:scale-125"
+            color="#3b5998"
+            alt="Facebook"
+          />
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.instagram.com/keykoterapias/"
+            aria-label="Instagram"
+          ></a>
+          <FaInstagramSquare
+            className="text-lg transition-all duration-200 hover:scale-125"
+            color="#E1306C"
+            alt="Instagram"
+          />
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://api.whatsapp.com/send/?phone=5521980943935&text&type=phone_number&app_absent=0"
+            aria-label="Whatsapp"
+          ></a>
+          <FaWhatsappSquare
+            className="text-lg transition-all duration-200 hover:scale-125"
+            color="#25D366"
+            alt="Whatsapp"
+          />
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.youtube.com/@keikoterapiasintegrativas9086"
+            aria-label="Youtube"
+          ></a>
+          <FaYoutube
+            className="text-lg transition-all duration-200 hover:scale-125"
+            color="#FF0000"
+            alt="Youtube"
+          />
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.gmail.com/your-facebook-page"
+            aria-label="Gmail"
+          ></a>
+          <SiGmail
+            className="text-lg transition-all duration-200 hover:scale-125"
+            color="#D44638"
+            alt="Gmail"
+          />
+        </li>
       </ul>
     </div>
   )

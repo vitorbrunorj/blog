@@ -20,80 +20,92 @@ export function Header() {
       <section className="grid bg-slate-50">
         <div className="container">
           <div className="h-8 hidden lg:flex flex-wrap justify-between sticky top-0">
-            <div className="flex opacity-80 items-center space-x-2">
-              <Link href="https://www.facebook.com/your-facebook-page">
+            <ul className="flex opacity-80 items-center space-x-2">
+              <li>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://www.facebook.com/your-facebook-page"
-                ></a>
-                <FaFacebookSquare
-                  className="text-lg transition-all duration-200 hover:scale-125"
-                  color="#3b5998"
-                  alt="Facebook"
-                />
-              </Link>
-              <Link href="https://www.instagram.com/keykoterapias/">
+                  aria-label="Facebook"
+                >
+                  <FaFacebookSquare
+                    className="text-lg transition-all duration-200 hover:scale-125"
+                    color="#3b5998"
+                    alt="Facebook"
+                  />
+                </a>
+              </li>
+              <li>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://www.instagram.com/keykoterapias/"
-                ></a>
-                <FaInstagramSquare
-                  className="text-lg transition-all duration-200 hover:scale-125"
-                  color="#E1306C"
-                  alt="Instagram"
-                />
-              </Link>
-              <Link href="https://api.whatsapp.com/send/?phone=5521980943935&text&type=phone_number&app_absent=0">
+                  aria-label="Instagram"
+                >
+                  <FaInstagramSquare
+                    className="text-lg transition-all duration-200 hover:scale-125"
+                    color="#E1306C"
+                    alt="Instagram"
+                  />
+                </a>
+              </li>
+              <li>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://api.whatsapp.com/send/?phone=5521980943935&text&type=phone_number&app_absent=0"
-                ></a>
-                <FaWhatsappSquare
-                  className="text-lg transition-all duration-200 hover:scale-125"
-                  color="#25D366"
-                  alt="Whatsapp"
-                />
-              </Link>
-              <Link href="https://www.gmail.com/your-facebook-page">
+                  aria-label="Whatsapp"
+                >
+                  <FaWhatsappSquare
+                    className="text-lg transition-all duration-200 hover:scale-125"
+                    color="#25D366"
+                    alt="Whatsapp"
+                  />
+                </a>
+              </li>
+              <li>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://www.gmail.com/your-facebook-page"
-                ></a>
-                <SiGmail
-                  className="text-lg transition-all duration-200 hover:scale-125"
-                  color="#D44638"
-                  alt="Gmail"
-                />
-              </Link>
-              <Link href="https://www.telegram.com/your-telegram-page">
+                  aria-label="Gmail"
+                >
+                  <SiGmail
+                    className="text-lg transition-all duration-200 hover:scale-125"
+                    color="#D44638"
+                    alt="Gmail"
+                  />
+                </a>
+              </li>
+              <li>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://www.telegram.com/your-telegram-page"
-                ></a>
-                <FaTelegram
-                  className="text-l transition-all duration-200 hover:scale-125"
-                  color="#0088cc"
-                  alt="Telegram"
-                />
-              </Link>
-              <Link href="https://www.youtube.com/@keikoterapiasintegrativas9086">
+                  aria-label="Telegram"
+                >
+                  <FaTelegram
+                    className="text-lg transition-all duration-200 hover:scale-125"
+                    color="#0088cc"
+                    alt="Telegram"
+                  />
+                </a>
+              </li>
+              <li>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://www.youtube.com/@keikoterapiasintegrativas9086"
-                ></a>
-                <FaYoutube
-                  className="text-lg transition-all duration-200 hover:scale-125"
-                  color="#FF0000"
-                  alt="Youtube"
-                />
-              </Link>
-            </div>
+                  aria-label="Youtube"
+                >
+                  <FaYoutube
+                    className="text-lg transition-all duration-200 hover:scale-125"
+                    color="#FF0000"
+                    alt="Youtube"
+                  />
+                </a>
+              </li>
+            </ul>
 
             <section className="sm:flex  text-xs font-light tracking-widest text-shadow items-center px-2 py-2 space-x-2">
               <div className="text-slate-500">
