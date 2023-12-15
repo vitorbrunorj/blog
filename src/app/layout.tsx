@@ -5,11 +5,19 @@ import { Open_Sans as FontSans } from 'next/font/google'
 import localFont from 'next/font/local'
 import { cn } from '@/lib/utils'
 import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 
 import { ThemeProvider } from './_components/theme-provider'
 
 import './globals.css'
+import dynamic from 'next/dynamic'
+
+const DynamicFooter = dynamic(
+  async () => await import('@/components/footer').then((mod) => mod.default),
+  {
+    loading: () => <div>Carregando...</div>,
+    ssr: false
+  }
+)
 
 const fontSans = FontSans({
   subsets: ['latin'],
@@ -63,10 +71,10 @@ export default function RootLayout({
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Header></Header>
+          <Header />
           {children}
           <Analytics />
-          <Footer />
+          <DynamicFooter />
         </ThemeProvider>
       </body>
     </html>

@@ -11,15 +11,16 @@ import {
 } from 'react-icons/fa'
 import { SiGmail } from 'react-icons/si'
 import { BsFillTelephoneFill } from 'react-icons/bs'
+import { ActiveLink } from '../active-link'
 
 export function Header() {
   return (
-    <header>
+    <header className="sticky top-0 z-50">
       {/* Header superior */}
 
       <section className="grid bg-slate-50">
         <div className="container">
-          <div className="h-8 hidden lg:flex flex-wrap justify-between sticky top-0">
+          <div className="h-8 hidden bg-slate-50 lg:flex flex-wrap justify-between">
             <ul className="flex opacity-80 items-center space-x-2">
               <li>
                 <a
@@ -131,52 +132,36 @@ export function Header() {
       {/* Header Inferior */}
 
       <section className="grid text-white font-medium tracking-wider bg-primary">
-        <div className="container mx-auto h-14 flex items-center justify-between px-2 py-2 sticky top-0">
+        <div className="container mx-auto h-14 flex items-center justify-between px-2 py-2 bg-primary">
           <div className="flex w-28 ">
             <Link href="/">
               <Image
                 src={logo}
                 alt="Keyko Terapias logo"
-                width={136} // Adicione a largura aqui
-                height={40} // Adicione a altura aqui
                 className="cursor-pointer"
+                priority
               />
             </Link>
           </div>
 
           <div className="hidden sm:flex flex-grow justify-center px-2 space-x-5 font-heading tracking-widest">
-            <Link
-              href="/"
-              className=" transition ease-in-out duration-1200 hover:text-secondary hover:scale-110"
-            >
-              Home
-            </Link>
-
-            <Link
-              href="/sobre"
-              className=" transition ease-in-out duration-1200 hover:text-secondary hover:scale-110"
-            >
-              Sobre
-            </Link>
-
-            <Link
-              href="/servicos"
-              className=" transition ease-in-out duration-1200 hover:text-secondary hover:scale-110"
-            >
-              Serviços
-            </Link>
-            <Link
-              href="/blog"
-              className="transition ease-in-out duration-1200 hover:text-secondary hover:scale-110"
-            >
-              Blog
-            </Link>
-            <Link
-              href="/contatos"
-              className=" transition ease-in-out duration-1200 hover:text-secondary hover:scale-110"
-            >
-              Contatos
-            </Link>
+            <ul className="flex space-x-5">
+              <li className=" transition ease-in-out duration-1200 hover:text-secondary hover:scale-110">
+                <ActiveLink href="/">Home</ActiveLink>
+              </li>
+              <li className=" transition ease-in-out duration-1200 hover:text-secondary hover:scale-110">
+                <ActiveLink href="/sobre">Sobre</ActiveLink>
+              </li>
+              <li className=" transition ease-in-out duration-1200 hover:text-secondary hover:scale-110">
+                <ActiveLink href="/servicos">Serviços</ActiveLink>
+              </li>
+              <li className=" transition ease-in-out duration-1200 hover:text-secondary hover:scale-110">
+                <ActiveLink href="/blog">Blog</ActiveLink>
+              </li>
+              <li className=" transition ease-in-out duration-1200 hover:text-secondary hover:scale-110">
+                <ActiveLink href="/contatos">Contatos</ActiveLink>
+              </li>
+            </ul>
           </div>
           <div className="flex flex-grow justify  text-xs px-2 space-x-5 font-heading justify-center sm:justify-start">
             <span className="flex items-center">

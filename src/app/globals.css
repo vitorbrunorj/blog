@@ -12,9 +12,9 @@
     --popover-foreground: 224 71.4% 4.1%;
     --primary: 343, 53%, 53%;
     --primary-foreground: 210 20% 98%;
-    --secondary: 163.16, 52.29%, 61.37%;
+    --secondary: 165, 48%, 75%;
     --secondary-foreground: 220.9 39.3% 11%;
-    --muted: 163.16, 52.29%, 61.37%;
+    --muted: 165, 48%, 75%;
     --muted-foreground: 220 8.9% 46.1%;
     --accent: 160, 51%, 82%; /* cor de fundo dos icones */
     --accent-foreground: 220.9 39.3% 11%;
@@ -108,36 +108,6 @@ body {
   }
 }
 
-@media (max-width: 460px) {
-  html {
-    font-size: 75%;
-  }
-}
-
-@media (max-width: 440px) {
-  html {
-    font-size: 70%;
-  }
-}
-
-@media (max-width: 480px) {
-  html {
-    font-size: 67%;
-  }
-}
-
-@media (max-width: 420px) {
-  html {
-    font-size: 63%;
-  }
-}
-
-@media (max-width: 380px) {
-  html {
-    font-size: 60%;
-  }
-}
-
 .container2 {
   width: 100%;
   margin-right: auto;
@@ -185,4 +155,20 @@ body {
   top: 32px;
   width: 100%;
   z-index: 1;
+}
+
+.underline-active {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-active::after {
+  content: '';
+  position: absolute;
+  left: 15%; /* Centraliza o sublinhado para ocupar 70% do texto */
+  width: 70%;
+  height: 2px; /* Diminui a altura para criar um efeito de pílula mais fino */
+  bottom: 0px; /* Aumenta o espaço entre a linha e o texto */
+  background: currentColor;
+  border-radius: 10px; /* Ajusta o border-radius para metade da altura */
 }

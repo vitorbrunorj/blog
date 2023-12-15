@@ -19,22 +19,13 @@ export default function Home() {
     <main>
       <section className="container3 bg-gradient-to-b from-primary to-white dark:bg-gradient-to-b dark:from-darkPrimary dark:to-neutral-300">
         <div className="bg-gradient-to-b from-primary to-white dark:bg-gradient-to-b dark:from-darkPrimary dark:to-neutral-300 min-h-[500px] grid grid-cols-1 lg:grid-cols-2 gap-2 relative">
-          <div
-            suppressHydrationWarning={true}
-            className="flex items-start justify-center h-full"
-          >
-            <h1
-              suppressHydrationWarning={true}
-              className="grid leading-snug text-slate-50 text-5xl tracking-wider py-6 lg:container lg:grid lg:justify-end lg:px-2 lg:py-24 "
-            >
+          <div className="flex items-start justify-center h-full">
+            <h1 className="grid leading-snug text-slate-50 text-4xl sm:text-5xl tracking-wider py-6 lg:container lg:grid lg:justify-end lg:px-2 lg:py-24 ">
               Bem-vindo à Jornada
               <br />
               de Transformação
               <br />
-              <span
-                suppressHydrationWarning={true}
-                className="leading-snug text-slate-800 text-4xl font-heading font-semibold tracking-wider"
-              >
+              <span className="leading-snug text-slate-800 text-3xl sm:text-4xl  font-heading font-semibold tracking-wider">
                 com Elaine Keyko,
                 <br />
                 Terapeuta Integrativa!
@@ -44,7 +35,6 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center lg:mt-6 lg:container lg:grid lg:justify-start">
             <Link href="/">
               <Image
-                suppressHydrationWarning={true}
                 className="object-cover min-w-[200px] w-[520px]"
                 src={banner}
                 alt="Keyko Terapias imagem"
@@ -57,6 +47,7 @@ export default function Home() {
                 className="object-cover"
                 src={onda}
                 alt="Keyko Terapias onda"
+                priority
               />
             </Link>
           </div>
@@ -106,6 +97,7 @@ export default function Home() {
             className="object-cover w-full h-full border-4 border-white dark:border-stone-200 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-500 hover:border-pink-100 ease-in-out z-10 "
             src={image2}
             alt="Keyko Terapias pessoas na roda"
+            loading="lazy"
           />
         </div>
       </section>
@@ -230,6 +222,7 @@ export default function Home() {
               className="object-cover w-full"
               src={index === 0 ? image3 : index === 1 ? image4 : image5}
               alt="Keyko Terapias mão dadas"
+              loading="lazy"
             />
             <div className="text-white text-center p-6">
               <h2 className="font-heading text-lg tracking-wider mb-2">
@@ -297,7 +290,7 @@ export default function Home() {
           <h3 className="font-bold mt-4 text-slate-700 tracking-wider font-heading text-lg py-2">
             1. Transformação Profunda:
           </h3>
-          <p className="">
+          <p>
             Estamos comprometidos em proporcionar uma transformação profunda{' '}
             <br />
             que vá além das superfícies, abordando os alicerces de suas
@@ -311,7 +304,7 @@ export default function Home() {
           <h3 className="font-bold mt-4 text-slate-700 tracking-wider font-heading text-lg py-2">
             2. Abordagem Personalizada:
           </h3>
-          <p suppressHydrationWarning={true}>
+          <p>
             Sua jornada é única, e nossa abordagem é moldada para atender <br />
             especificamente às suas necessidades individuais.
           </p>
@@ -323,7 +316,7 @@ export default function Home() {
           <h3 className="font-bold mt-4 text-slate-700 tracking-wider font-heading text-lg py-2">
             3. Integralidade Biopsicossocial:
           </h3>
-          <p suppressHydrationWarning={true}>
+          <p>
             Enxergamos você em sua totalidade, reconhecendo a interconexão entre
             corpo, mente e espírito.
           </p>
@@ -335,7 +328,7 @@ export default function Home() {
           <h3 className="font-bold mt-4 text-slate-700 tracking-wider font-heading text-lg py-2">
             4. Apoio Contínuo:
           </h3>
-          <p suppressHydrationWarning={true}>
+          <p>
             Nosso compromisso transcende as sessões individuais; <br />
             estamos aqui para apoiá-lo ao longo de sua jornada contínua.
           </p>
@@ -348,7 +341,7 @@ export default function Home() {
           <h3 className="font-bold mt-4 text-slate-700 tracking-wider font-heading text-lg py-2">
             5. Sementes de Empoderamento:
           </h3>
-          <p suppressHydrationWarning={true}>
+          <p>
             Plantamos sementes de empoderamento, nutrindo a autonomia <br />e a
             capacidade de autorregulação.
           </p>
@@ -378,7 +371,7 @@ export default function Home() {
         </h2>
         <div className="">
           <div>
-            <p suppressHydrationWarning={true}>
+            <p>
               Você está pronto para embarcar em uma jornada de autodescoberta e
               transformação? <br />
               Elaine Keyko está aqui para guiá-lo nesse caminho único e pessoal.

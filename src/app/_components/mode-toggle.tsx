@@ -11,9 +11,20 @@ import {
 import { useTheme } from 'next-themes'
 import { Moon, Sun } from 'lucide-react'
 import { ThemeStatus } from './themeStatus'
+import { useEffect, useState } from 'react'
 
 export function ModeToggle() {
   const { theme, setTheme } = useTheme()
+  const [isMounted, setIsMounted] = useState(false)
+
+  // Certifique-se de que o componente só seja renderizado no cliente
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
+
+  if (!isMounted) {
+    return null
+  }
 
   return (
     <DropdownMenu>
