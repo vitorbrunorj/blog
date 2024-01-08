@@ -8,7 +8,7 @@ import {
   FaWhatsappSquare
 } from 'react-icons/fa'
 import { SiGmail } from 'react-icons/si'
-import { ActiveLink } from '../active-link'
+import { ActiveLinkFooter } from '../active-link-footer'
 
 export default function Footer() {
   return (
@@ -75,19 +75,19 @@ function SiteLinks() {
       <h2 className="font-heading tracking-widest">Site</h2>
       <ul className="py-1 text-xs sm:text-sm font-light tracking-wide flex-col items-center flex-grow space-y-1">
         <li className="transform transition-transform duration-200  hover:text-secondary hover:scale-110 hover:font-semibold">
-          <ActiveLink href="/">Home</ActiveLink>
+          <ActiveLinkFooter href="/">Home</ActiveLinkFooter>
         </li>
         <li className="transform transition-transform duration-200  hover:text-secondary hover:scale-110 hover:font-semibold">
-          <ActiveLink href="/sobre">Sobre</ActiveLink>
+          <ActiveLinkFooter href="/sobre">Sobre</ActiveLinkFooter>
         </li>
         <li className="transform transition-transform duration-200  hover:text-secondary hover:scale-110 hover:font-semibold">
-          <ActiveLink href="/servicos">Serviços</ActiveLink>
+          <ActiveLinkFooter href="/servicos">Serviços</ActiveLinkFooter>
         </li>
         <li className="transform transition-transform duration-200  hover:text-secondary hover:scale-110 hover:font-semibold">
-          <ActiveLink href="/blog">Blog</ActiveLink>
+          <ActiveLinkFooter href="/blog">Blog</ActiveLinkFooter>
         </li>
         <li className="transform transition-transform duration-200  hover:text-secondary hover:scale-110 hover:font-semibold">
-          <ActiveLink href="/contatos">Contatos</ActiveLink>
+          <ActiveLinkFooter href="/contatos">Contatos</ActiveLinkFooter>
         </li>
       </ul>
     </div>
@@ -98,7 +98,7 @@ function SocialLinks() {
   return (
     <div>
       <h2 className="font-heading tracking-widest">Siga-nos</h2>
-      <ul className="flex py-2 bg-slate-50 p-2 space-x-2 rounded-full">
+      <ul className="flex py-2 bg-slate-50 p-3 space-x-2 rounded-full">
         <li>
           <a
             target="_blank"
