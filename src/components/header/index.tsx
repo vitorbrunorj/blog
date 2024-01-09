@@ -2,8 +2,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import logo from '@/public/logo.svg'
 import { ModeToggle } from '@/app/_components/mode-toggle'
+import { MyDropdownMenu } from '@/app/_components/dropMenu'
 
-import { FaBars, FaYoutube, FaTelegram, FaLocationDot } from 'react-icons/fa6'
+import { FaYoutube, FaLocationDot } from 'react-icons/fa6'
 import {
   FaFacebookSquare,
   FaInstagramSquare,
@@ -26,7 +27,7 @@ export function Header() {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://www.facebook.com/your-facebook-page"
+                  href="https://www.facebook.com/elaine.keiko.br?mibextid=ZbWKwL"
                   aria-label="Facebook"
                 >
                   <FaFacebookSquare
@@ -68,7 +69,7 @@ export function Header() {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://www.gmail.com/your-facebook-page"
+                  href="mailto:elakeikoyamada@gmail.com"
                   aria-label="Gmail"
                 >
                   <SiGmail
@@ -78,20 +79,7 @@ export function Header() {
                   />
                 </a>
               </li>
-              <li>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.telegram.com/your-telegram-page"
-                  aria-label="Telegram"
-                >
-                  <FaTelegram
-                    className="text-lg transition-all duration-200 hover:scale-125"
-                    color="#0088cc"
-                    alt="Telegram"
-                  />
-                </a>
-              </li>
+
               <li>
                 <a
                   target="_blank"
@@ -107,24 +95,36 @@ export function Header() {
                 </a>
               </li>
             </ul>
-
-            <section className="sm:flex  text-xs font-light tracking-widest text-shadow items-center px-2 py-2 space-x-2">
-              <div className="text-slate-500">
-                <BsFillTelephoneFill />
-              </div>
-              <span className="text-slate-700">Telefone: (21) 98094-3965 </span>
-            </section>
-
-            <section className="hidden lg:flex  text-xs font-light tracking-wide text-shadow items-center px-2 space-x-2">
-              {' '}
-              <div className="text-slate-500 ">
-                <FaLocationDot />
-              </div>
-              <span className="text-slate-700">
-                R. Visc. de Pirajá, 572 - 6 andar - Ipanema, Rio de Janeiro -
-                RJ, 22410-002
-              </span>
-            </section>
+            <a
+              href="https://api.whatsapp.com/send/?phone=5521980943935&text&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <section className="sm:flex  text-xs font-light tracking-widest text-shadow items-center px-2 py-2 space-x-2 hover:scale-105">
+                <div className="text-slate-500">
+                  <BsFillTelephoneFill />
+                </div>
+                <span className="text-slate-700">
+                  Telefone: (21) 98094-3965{' '}
+                </span>
+              </section>
+            </a>
+            <a
+              href="https://www.google.com/maps/dir//r.+visc.+de+piraj%C3%A1,+572+-+6+andar+-+ipanema,+rio+de+janeiro+-+rj,+22410-002+keyko+terapia/@-22.9726455,-43.2124974,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x9bd5e5c19d28d5:0x6bb43b2960152aae!2m2!1d-43.2120193!2d-22.9834866?entry=ttu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <section className="hidden lg:flex text-xs font-light tracking-wide text-shadow items-center px-2 py-2 space-x-2 hover:scale-105">
+                {' '}
+                <div className="text-slate-500 ">
+                  <FaLocationDot />
+                </div>
+                <span className="text-slate-700">
+                  R. Visc. de Pirajá, 572 - 6 andar - Ipanema, Rio de Janeiro -
+                  RJ, 22410-002
+                </span>
+              </section>
+            </a>
           </div>
         </div>
       </section>
@@ -132,7 +132,7 @@ export function Header() {
       {/* Header Inferior */}
 
       <section className="grid text-white font-medium tracking-wider bg-primary">
-        <div className="container mx-auto h-14 flex items-center justify-between px-2 py-2 bg-primary">
+        <div className="container mx-auto h-14 flex items-center justify-between px-2 py-2 lg:px-10 bg-primary">
           <div className="flex w-28 ">
             <Link href="/">
               <Image
@@ -144,7 +144,7 @@ export function Header() {
             </Link>
           </div>
 
-          <div className="hidden sm:flex flex-grow justify-center px-2 space-x-5 font-heading tracking-widest">
+          <div className="hidden sm:flex justify-between font-heading tracking-widest">
             <ul className="flex space-x-5">
               <li className=" transition ease-in-out duration-1200 hover:text-secondary hover:scale-110">
                 <ActiveLink href="/">Home</ActiveLink>
@@ -163,14 +163,15 @@ export function Header() {
               </li>
             </ul>
           </div>
-          <div className="flex flex-grow justify  text-xs px-2 space-x-5 font-heading justify-center sm:justify-start">
+
+          <div className="flex text-xs px-2 font-heading">
             <span className="flex items-center">
               <ModeToggle />
             </span>
           </div>
 
           <div className="sm:hidden py-1 px-1">
-            <FaBars className="text-4xl" />
+            <MyDropdownMenu />
           </div>
         </div>
       </section>

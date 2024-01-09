@@ -35,19 +35,18 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center lg:mt-6 lg:container lg:grid lg:justify-start">
             <Link href="/">
               <Image
-                className="object-cover min-w-[200px] w-[520px]"
+                className="min-w-[200px] w-[525px]"
                 src={banner}
                 alt="Keyko Terapias imagem"
               />
             </Link>
           </div>
-          <div className="flex flex-col justify-end absolute z-10 bottom-[-1px] dark:hidden">
+          <div className="flex flex-col justify-center absolute z-10 bottom-[-1px] dark:hidden">
             <Link href="/">
               <Image
                 className="object-cover"
                 src={onda}
                 alt="Keyko Terapias onda"
-                priority
               />
             </Link>
           </div>

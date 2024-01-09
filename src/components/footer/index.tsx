@@ -15,9 +15,9 @@ export default function Footer() {
     <>
       <footer>
         <div className="bg-primary ">
-          <div className="container px-2 py-3 ">
-            <nav className="flex justify-between text-white h-40 px-1">
-              <section>
+          <div className="container px-2 py-3 item-center">
+            <nav className="flex justify-between text-white h-40">
+              <section className="flex flex-col items-center justify-center">
                 <Link href="/">
                   <Image
                     src={logo}
@@ -27,28 +27,30 @@ export default function Footer() {
                     className="cursor-pointer"
                   />
                 </Link>
-
-                <p
-                  suppressHydrationWarning={true}
-                  className=" pt-2 tracking-wide text-xs sm:text-sm"
+                <a
+                  href="https://api.whatsapp.com/send/?phone=5521980943935&text&type=phone_number&app_absent=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Tel: (21) 98094-3965
+                  <p className="pt-2 tracking-wide text-xs sm:text-sm hover:scale-105 hover:fon text-center ">
+                    Tel: (21) 98094-3965
+                  </p>
+                </a>
+                <p className="py-2 text-xs sm:text-sm hover:scale-105  text-center">
+                  <a href="mailto:elakeikoyamada@gmail.com">
+                    elakeikoyamada@gmail.com
+                  </a>
                 </p>
-                <p
-                  suppressHydrationWarning={true}
-                  className="py-2 text-xs sm:text-sm"
+                <a
+                  href="https://www.google.com/maps/dir//r.+visc.+de+piraj%C3%A1,+572+-+6+andar+-+ipanema,+rio+de+janeiro+-+rj,+22410-002+keyko+terapia/@-22.9726455,-43.2124974,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x9bd5e5c19d28d5:0x6bb43b2960152aae!2m2!1d-43.2120193!2d-22.9834866?entry=ttu"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  exemplo@empresa.com
-                </p>
-                <address className="text-xs sm:text-sm">
-                  {' '}
-                  <p suppressHydrationWarning={true}>
-                    Rua Visc. de Pirajá, 572 - 6º andar
-                  </p>
-                  <p suppressHydrationWarning={true}>
-                    Ipanema, Rio de Janeiro - RJ
-                  </p>
-                </address>
+                  <address className="text-xs sm:text-sm hover:scale-105  text-center">
+                    <p>Rua Visc. de Pirajá, 572 - 6º andar</p>
+                    <p>Ipanema, Rio de Janeiro - RJ</p>
+                  </address>
+                </a>
               </section>
               <SiteLinks />
               <SocialLinks />
@@ -60,9 +62,7 @@ export default function Footer() {
       <div className=" ">
         <div className="container flex items-center justify-center px-2 py-2 h-8 ">
           <hr />
-          <p suppressHydrationWarning={true}>
-            © 2023 Keyko Terapias - Created by Vitor Bruno{' '}
-          </p>
+          <p>© 2024 Keyko Terapias - Created by Vitor Bruno </p>
         </div>
       </div>
     </>
@@ -71,22 +71,22 @@ export default function Footer() {
 
 function SiteLinks() {
   return (
-    <div className="hidden sm:flex flex-col ">
+    <div className="hidden sm:flex flex-col overflow-hidden">
       <h2 className="font-heading tracking-widest">Site</h2>
-      <ul className="py-1 text-xs sm:text-sm font-light tracking-wide flex-col items-center flex-grow space-y-1">
-        <li className="transform transition-transform duration-200  hover:text-secondary hover:scale-110 hover:font-semibold">
+      <ul className="px-1 py-1 text-xs sm:text-sm font-light tracking-wide flex-col items-center flex-grow space-y-1">
+        <li className="transform transition-transform duration-200 hover:text-secondary hover:scale-110">
           <ActiveLinkFooter href="/">Home</ActiveLinkFooter>
         </li>
-        <li className="transform transition-transform duration-200  hover:text-secondary hover:scale-110 hover:font-semibold">
+        <li className="transform transition-transform duration-200 hover:text-secondary hover:scale-110">
           <ActiveLinkFooter href="/sobre">Sobre</ActiveLinkFooter>
         </li>
-        <li className="transform transition-transform duration-200  hover:text-secondary hover:scale-110 hover:font-semibold">
+        <li className="transform transition-transform duration-200 hover:text-secondary hover:scale-110">
           <ActiveLinkFooter href="/servicos">Serviços</ActiveLinkFooter>
         </li>
-        <li className="transform transition-transform duration-200  hover:text-secondary hover:scale-110 hover:font-semibold">
+        <li className="transform transition-transform duration-200 hover:text-secondary hover:scale-110">
           <ActiveLinkFooter href="/blog">Blog</ActiveLinkFooter>
         </li>
-        <li className="transform transition-transform duration-200  hover:text-secondary hover:scale-110 hover:font-semibold">
+        <li className="transform transition-transform duration-200 hover:text-secondary hover:scale-110">
           <ActiveLinkFooter href="/contatos">Contatos</ActiveLinkFooter>
         </li>
       </ul>
@@ -97,7 +97,7 @@ function SiteLinks() {
 function SocialLinks() {
   return (
     <div>
-      <h2 className="font-heading tracking-widest">Siga-nos</h2>
+      <h2 className="font-heading tracking-widest text-center">Siga-nos</h2>
       <ul className="flex py-2 bg-slate-50 p-3 space-x-2 rounded-full">
         <li>
           <a
@@ -145,7 +145,7 @@ function SocialLinks() {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.gmail.com/your-facebook-page"
+            href="mailto:elakeikoyamada@gmail.com"
             aria-label="Gmail"
           >
             <SiGmail

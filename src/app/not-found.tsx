@@ -5,6 +5,9 @@ export default function NotFound() {
     <div>
       <h2>Pagina 404</h2>
       <p>configurar a pagina</p>
+
+      <p>Arquivo not-found</p>
+
       <Link href="/">Return Home</Link>
     </div>
   )
