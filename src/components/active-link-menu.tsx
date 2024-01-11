@@ -7,7 +7,7 @@ type ActiveLinkProps = LinkProps & {
   children: React.ReactNode
 }
 
-export const ActiveLinkFooter = ({
+export const ActiveLinkMenu = ({
   href,
   children,
   ...rest
@@ -23,8 +23,8 @@ export const ActiveLinkFooter = ({
         href={href}
         className={`${
           isActive
-            ? 'text-secondary font-bold transform transition-transform duration-200 hover:scale-110'
-            : 'text-white'
+            ? 'text-primary font-bold transform transition-transform duration-200 hover:scale-110'
+            : 'text-black dark:text-white'
         } `}
         {...rest}
       >

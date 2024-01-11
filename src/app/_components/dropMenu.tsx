@@ -8,27 +8,29 @@ import {
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu'
 
+import { ActiveLinkMenu } from '../../components/active-link-menu'
+
 export const MyDropdownMenu = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>
         <FaBars className="text-4xl" />
       </DropdownMenuTrigger>
-      <DropdownMenuContent>
+      <DropdownMenuContent className="">
         <DropdownMenuItem>
-          <a href="/">Home</a>
+          <ActiveLinkMenu href="/">Home</ActiveLinkMenu>
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <a href="/sobre">Sobre</a>
+          <ActiveLinkMenu href="/sobre">Sobre</ActiveLinkMenu>
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <a href="/servicos">Serviços</a>
+          <ActiveLinkMenu href="/servicos">Serviços</ActiveLinkMenu>
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <a href="/blog">Blog</a>
+          <ActiveLinkMenu href="/blog">Blog</ActiveLinkMenu>
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <a href="/contatos">Contatos</a>
+          <ActiveLinkMenu href="/contatos">Contatos</ActiveLinkMenu>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

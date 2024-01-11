@@ -20,7 +20,7 @@ export default function Home() {
       <section className="container3 bg-gradient-to-b from-primary to-white dark:bg-gradient-to-b dark:from-darkPrimary dark:to-neutral-300">
         <div className="bg-gradient-to-b from-primary to-white dark:bg-gradient-to-b dark:from-darkPrimary dark:to-neutral-300 min-h-[500px] grid grid-cols-1 lg:grid-cols-2 gap-2 relative">
           <div className="flex items-start justify-center h-full">
-            <h1 className="grid leading-snug text-slate-50 text-4xl sm:text-5xl tracking-wider py-6 lg:container lg:grid lg:justify-end lg:px-2 lg:py-24 ">
+            <h1 className="grid leading-snug text-slate-50 text-4xl sm:text-5xl tracking-wider py-6 lg:container lg:grid lg:justify-end lg:px-2 lg:py-36 ">
               Bem-vindo à Jornada
               <br />
               de Transformação
@@ -90,6 +90,7 @@ export default function Home() {
           </h2>
         </div>
       </section>
+
       <section className="container2 flex">
         <div className="container py-2.5 px-2.5 flex justify-center items-center">
           <Image
