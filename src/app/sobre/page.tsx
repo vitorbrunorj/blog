@@ -12,14 +12,16 @@ export default function Sobre(): JSX.Element {
           <div className="bg-gradient-to-b from-primary to-white dark:bg-gradient-to-b dark:from-darkPrimary dark:to-neutral-300 min-h-[500px] grid grid-cols-1 lg:grid-cols-2 gap-2 relative">
             <div className="flex items-start justify-center h-full">
               <h1 className="grid leading-snug text-slate-50 text-4xl sm:text-5xl tracking-wider py-6 lg:container lg:grid lg:justify-end lg:px-2 lg:py-36 ">
-                Bem-vindo à Jornada
-                <br />
-                de Transformação
-                <br />
-                <span className="leading-snug text-slate-800 text-3xl sm:text-4xl  font-heading font-semibold tracking-wider">
-                  com Elaine Keyko,
+                <span className="font-heading">
+                  Conheça Elaine Keyko
                   <br />
-                  Terapeuta Integrativa!
+                  e DESCUBRA:
+                  <br />
+                </span>
+                <span className="leading-snug text-slate-800 py-2 text-2xl sm:text-3xl font-semibold tracking-wider">
+                  A fonte de inspiração por
+                  <br />
+                  trás das transformações.
                 </span>
               </h1>
             </div>

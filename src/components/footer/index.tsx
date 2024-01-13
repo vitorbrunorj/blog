@@ -17,7 +17,7 @@ export default function Footer() {
         <div className="bg-primary ">
           <div className="container px-2 py-3 item-center">
             <nav className="flex justify-between text-white h-40">
-              <section className="flex flex-col items-center justify-center">
+              <section className="flex flex-col justify-center text-justify tracking-wider mx-a p-5">
                 <Link href="/">
                   <Image
                     src={logo}
@@ -27,16 +27,17 @@ export default function Footer() {
                     className="cursor-pointer"
                   />
                 </Link>
+
                 <a
                   href="https://api.whatsapp.com/send/?phone=5521980943935&text&type=phone_number&app_absent=0"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <p className="pt-2 tracking-wide text-xs sm:text-sm hover:scale-105 hover:fon text-center ">
+                  <p className="pt-2 tracking-wide text-xs sm:text-sm hover:scale-105">
                     Tel: (21) 98094-3965
                   </p>
                 </a>
-                <p className="py-2 text-xs sm:text-sm hover:scale-105  text-center">
+                <p className="text-xs sm:text-sm hover:scale-105">
                   <a href="mailto:elakeikoyamada@gmail.com">
                     elakeikoyamada@gmail.com
                   </a>
@@ -46,7 +47,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <address className="text-xs sm:text-sm hover:scale-105  text-center">
+                  <address className="text-xs sm:text-sm hover:scale-105">
                     <p>Rua Visc. de Pirajá, 572 - 6º andar</p>
                     <p>Ipanema, Rio de Janeiro - RJ</p>
                   </address>
@@ -96,7 +97,7 @@ function SiteLinks() {
 
 function SocialLinks() {
   return (
-    <div>
+    <div className="mr-5">
       <h2 className="font-heading tracking-widest text-center">Siga-nos</h2>
       <ul className="flex py-2 bg-slate-50 p-3 space-x-2 rounded-full">
         <li>

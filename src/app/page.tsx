@@ -8,31 +8,26 @@ import image2 from '../public/image2.webp'
 import image3 from '../public/image3.webp'
 import image4 from '../public/image4.webp'
 import image5 from '../public/image5.webp'
+import image6 from '../public/image6.webp'
 import FaqSection from '@/app/_components/faq-section'
 import { FaCompass } from 'react-icons/fa'
 import { PiFlowerLotusFill, PiHandsPrayingFill } from 'react-icons/pi'
 import { GiLifeInTheBalance, GiBrain } from 'react-icons/gi'
 import { BsPersonArmsUp } from 'react-icons/bs'
+import { IoLogoWhatsapp } from 'react-icons/io'
 
 export default function Home() {
   return (
     <main>
-      <section className="container3 bg-gradient-to-b from-primary to-white dark:bg-gradient-to-b dark:from-darkPrimary dark:to-neutral-300">
-        <div className="bg-gradient-to-b from-primary to-white dark:bg-gradient-to-b dark:from-darkPrimary dark:to-neutral-300 min-h-[500px] grid grid-cols-1 lg:grid-cols-2 gap-2 relative">
-          <div className="flex items-start justify-center h-full">
-            <h1 className="grid leading-snug text-slate-50 text-4xl sm:text-5xl tracking-wider py-6 lg:container lg:grid lg:justify-end lg:px-2 lg:py-36 ">
-              Bem-vindo à Jornada
-              <br />
-              de Transformação
-              <br />
-              <span className="leading-snug text-slate-800 text-3xl sm:text-4xl  font-heading font-semibold tracking-wider">
-                com Elaine Keyko,
-                <br />
-                Terapeuta Integrativa!
-              </span>
+      <section className="bg-gradient-to-b from-primary to-white dark:bg-gradient-to-b dark:from-darkPrimary dark:to-neutral-300">
+        <div className="bg-gradient-to-b from-primary to-white dark:bg-gradient-to-b dark:from-darkPrimary dark:to-neutral-300 min-h-[500px] grid grid-cols-1 lg:grid-cols-2 relative container2">
+          <div className="flex items-center justify-center">
+            <h1 className="">
+              Bem-vindo à Jornada de Transformação com Elaine Keyko, Terapeuta
+              Integrativa!
             </h1>
           </div>
-          <div className="flex flex-col items-center justify-center lg:mt-6 lg:container lg:grid lg:justify-start">
+          <div>
             <Link href="/">
               <Image
                 className="min-w-[200px] w-[525px]"
@@ -41,7 +36,8 @@ export default function Home() {
               />
             </Link>
           </div>
-          <div className="flex flex-col justify-center absolute z-10 bottom-[-1px] dark:hidden">
+
+          <div className="absolute z-10 bottom-[-1px] dark:hidden">
             <Link href="/">
               <Image
                 className="object-cover"
@@ -50,7 +46,7 @@ export default function Home() {
               />
             </Link>
           </div>
-          <div className="flex-col justify-end absolute z-10 bottom-[-1px] hidden dark:flex w-full">
+          <div className="justify-center absolute z-10 bottom-[-1px] hidden dark:flex w-full">
             <Link href="/">
               <Image
                 className="object-cover"
@@ -62,153 +58,199 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container2 px-2 mx-auto text-center">
-        <div className="mx-auto">
-          <h2 className="leading-relaxed text-base text-center font-light tracking-wider py-6 ">
-            Olá, sou Elaine Keyko, Terapeuta Integrativa, <br />
-            dedicada a conduzir indivíduos em uma
+      <section className="container2 p-5 text-center">
+        <div className="flex items-center justify-center">
+          <h2 className="leading-relaxed p-2 text-lg text-justify font-light tracking-wider max-w-[650px]">
+            <p>
+              {' '}
+              Olá, sou Elaine Keyko, Terapeuta Integrativa, dedicada a guiar
+              indivíduos em uma jornada de autoconhecimento e libertação.
+              Profundizo-me na essência da integralidade biopsicossocial,
+              embasada em uma visão holística que promove transformações
+              significativas.{' '}
+            </p>
             <br />
-            jornada de autodescoberta e libertação.
+            <p>
+              Ofereço uma abordagem única, aliada à experiência adquirida em
+              minha formação acadêmica, conduzindo transformações pessoais por
+              meio das Terapias Integrativas.{' '}
+            </p>{' '}
             <br />
-            Mergulho na essência da integralidade biopsicossocial, <br />
-            fundamentada em uma visão holística que transforma vidas. <br />
-            <br />
-            Ofereço uma abordagem única, <br />
-            combinando a experiência <br />
-            da minha formação acadêmica <br />
-            com as transformações pessoais vividas
-            <br />
-            através das Terapias Integrativas.
-            <br />
-            O objetivo é auxiliar na superação
-            <br />
-            de obstáculos emocionais
-            <br />
-            e permitir a manifestação da melhor
-            <br />
-            versão de cada indivíduo.
+            <p>
+              {' '}
+              Meu propósito é auxiliar na superação de obstáculos emocionais,
+              possibilitando a manifestação da melhor versão de cada indivíduo.
+              Bem-vindo à sua jornada de transformação com Elaine Keyko,
+              Terapeuta Integrativa!
+            </p>
           </h2>
         </div>
       </section>
 
       <section className="container2 flex">
-        <div className="container py-2.5 px-2.5 flex justify-center items-center">
+        <div className="container mx-auto p-5 flex justify-center items-center">
           <Image
-            className="object-cover w-full h-full border-4 border-white dark:border-stone-200 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-500 hover:border-pink-100 ease-in-out z-10 "
+            className="object-cover w-full h-full border-4 border-white dark:border-stone-200 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-500 z-10 "
             src={image2}
             alt="Keyko Terapias pessoas na roda"
             loading="lazy"
           />
         </div>
       </section>
-      <div className="container2 px-2 flex flex-col items-center justify-center">
-        <h2 className="py-12 font-heading text-center text-2xl tracking-wider font-semibold">
+      <div className="container2 mx-auto p-5 flex flex-col items-center justify-center">
+        <h2 className="py-10 font-heading text-center leading-normal text-3xl md:text-4xl tracking-wider font-semibold">
           Desperte sua Melhor Versão
         </h2>
       </div>
 
-      <section className="container mx-auto px-6 py-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <div className="bg-white rounded-lg shadow-md transform hover:scale-105 transition duration-200 hover:bg-pink-50">
-            <div className="p-5">
-              <h3 className="font-heading text-slate-700 text-center text-2xl tracking-wider font-semibold p-2">
-                <span className="flex items-center justify-center py-4">
-                  <FaCompass size={40} />
-                </span>
-                Jornada Personalizada
-              </h3>
-              <p className="text-gray-500 mb-4 text-center">
-                Orientação única para sua evolução. <br />
-                Cada sessão é moldada para desbloquear <br />
-                seu potencial máximo.
-              </p>
+      <section className="container mx-auto p-5 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="bg-white rounded-lg shadow-md transform hover:scale-105 transition duration-200 hover:bg-pink-50 hover:opacity-90">
+            <div className="p-4 text-slate-700">
+              <span className="flex items-center justify-center p-4">
+                <FaCompass size={40} />
+              </span>
+              <div className="flex flex-col justify-center leading-normal tracking-wider text-center">
+                <div>
+                  <h3 className="font-heading text-2xl tracking-wider font-semibold">
+                    Jornada Personalizada
+                  </h3>
+                </div>
+                <div className="max-w-[350px] self-center">
+                  <p className="text-gray-500 text-center leading-relaxed  mt-2 mb-2">
+                    Orientação única para sua evolução. <br />
+                    Cada sessão é moldada para <br />
+                    desbloquear seu potencial <br /> máximo.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
           <div className="bg-white rounded-lg shadow-md transform hover:scale-105 transition duration-200 hover:bg-pink-50 hover:opacity-90">
-            <div className="p-5">
-              <h3 className="font-heading text-slate-700 text-center text-2xl tracking-wider font-semibold p-2">
-                <span className="flex items-center justify-center py-4">
-                  <PiFlowerLotusFill size={40} />
-                </span>
-                Transformação Interior
-              </h3>
-              <p className="text-gray-500 mb-4 text-center">
-                Como uma flor que desabrocha, <br />
-                liberte-se de bloqueios emocionais <br />e descubra uma nova
-                expressão de si mesmo.
-              </p>
+            <div className="p-4 text-slate-700">
+              <span className="flex items-center justify-center p-4">
+                <PiFlowerLotusFill size={40} />
+              </span>
+              <div className="flex flex-col justify-center leading-normal tracking-wider text-center">
+                <div>
+                  <h3 className="font-heading text-2xl tracking-wider font-semibold">
+                    Transformação Interior
+                  </h3>
+                </div>
+                <div className="max-w-[350px] self-center">
+                  <p className="text-gray-500 leading-relaxed  text-center mt-2 mb-2">
+                    Como uma flor que desabrocha,
+                    <br />
+                    liberte-se de bloqueios
+                    <br />
+                    emocionais e descubra <br />
+                    uma nova expressão <br /> de si mesmo.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
           <div className="bg-white rounded-lg shadow-md transform hover:scale-105 transition duration-200 hover:bg-pink-50 hover:opacity-90">
-            <div className="p-5">
-              <h3 className="font-heading text-slate-700 text-center text-2xl tracking-wider font-semibold p-2">
-                <span className="flex items-center justify-center py-4">
-                  <GiLifeInTheBalance size={40} />
-                </span>
-                Equilíbrio Holístico
-              </h3>
-              <p className="text-gray-500 mb-4 text-center">
-                Integro mente, corpo e espírito <br />
-                para uma jornada completa <br />
-                em direção à paz interior.
-              </p>
+            <div className="p-4 text-slate-700">
+              <span className="flex items-center justify-center p-4">
+                <GiLifeInTheBalance size={40} />
+              </span>
+              <div className="flex flex-col justify-center leading-normal tracking-wider text-center">
+                <div>
+                  <h3 className="font-heading text-2xl tracking-wider font-semibold">
+                    Equilíbrio Holístico
+                  </h3>
+                </div>
+                <div className="max-w-[350px] self-center">
+                  <p className="text-gray-500 leading-relaxed text-center mt-2 mb-2">
+                    Integro mente, corpo e espírito
+                    <br />
+                    para uma jornada completa
+                    <br />
+                    em direção à paz interior.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
           <div className="bg-white rounded-lg shadow-md transform hover:scale-105 transition duration-200 hover:bg-pink-50 hover:opacity-90">
-            <div className="p-5">
-              <h3 className="font-heading text-slate-700 text-center text-2xl tracking-wider font-semibold p-2">
-                <span className="flex items-center justify-center py-4">
-                  <PiHandsPrayingFill size={40} />
-                </span>
-                Conexão Espiritual
-              </h3>
-              <p className="text-gray-500 mb-4 text-center">
-                Alcance um nível mais profundo <br />
-                de autoconhecimento, <br />
-                conectando-se espiritualmente <br />à sua essência interior.
-              </p>
+            <div className="p-4 text-slate-700">
+              <span className="flex items-center justify-center p-4">
+                <PiHandsPrayingFill size={40} />
+              </span>
+              <div className="flex flex-col justify-center leading-normal tracking-wider text-center">
+                <div>
+                  <h3 className="font-heading text-2xl tracking-wider font-semibold">
+                    Conexão Espiritual
+                  </h3>
+                </div>
+                <div className="max-w-[350px] self-center">
+                  <p className="text-gray-500 leading-relaxed text-center mt-2 mb-2">
+                    Alcance um nível mais profundo de
+                    <br />
+                    autoconhecimento, conectando-se <br />
+                    espiritualmente à sua essência
+                    <br />
+                    interior.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
           <div className="bg-white rounded-lg shadow-md transform hover:scale-105 transition duration-200 hover:bg-pink-50 hover:opacity-90">
-            <div className="p-5">
-              <h3 className="font-heading text-slate-700 text-center text-2xl tracking-wider font-semibold p-2">
-                <span className="flex items-center justify-center py-4">
-                  <GiBrain size={40} />
-                </span>
-                Resiliência Emocional
-              </h3>
-              <p className="text-gray-500 mb-4 text-center">
-                Fortaleça-se emocionalmente <br />
-                como uma árvore resistente,
-                <br />
-                superando desafios com determinação.
-              </p>
+            <div className="p-4 text-slate-700">
+              <span className="flex items-center justify-center p-4">
+                <GiBrain size={40} />
+              </span>
+              <div className="flex flex-col justify-center leading-normal tracking-wider text-center">
+                <div>
+                  <h3 className="font-heading text-2xl tracking-wider font-semibold">
+                    Resiliência Emocional
+                  </h3>
+                </div>
+                <div className="max-w-[350px] self-center">
+                  <p className="text-gray-500 leading-relaxed text-center mt-2 mb-2">
+                    Fortaleça-se emocionalmente <br />
+                    como uma árvore resistente, <br />
+                    superando desafios com
+                    <br /> determinação.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
           <div className="bg-white rounded-lg shadow-md transform hover:scale-105 transition duration-200 hover:bg-pink-50 hover:opacity-90">
-            <div className="p-5">
-              <h3 className="font-heading text-slate-700 text-center text-2xl tracking-wider font-semibold p-2">
-                <span className="flex items-center justify-center py-4">
-                  <BsPersonArmsUp size={40} />
-                </span>
-                Empoderamento Pessoal
-              </h3>
-              <p className="text-gray-500 mb-4 text-center">
-                Capacito você a manifestar sua melhor versão. <br />A
-                transformação começa <br />
-                quando você se empodera.
-              </p>
+            <div className="p-4 text-slate-700">
+              <span className="flex items-center justify-center p-4">
+                <BsPersonArmsUp size={40} />
+              </span>
+              <div className="flex flex-col justify-center leading-normal tracking-wider text-center">
+                <div>
+                  <h3 className="font-heading text-2xl tracking-wider font-semibold">
+                    Empoderamento Pessoal
+                  </h3>
+                </div>
+                <div className="max-w-[350px] self-center">
+                  <p className="text-gray-500 leading-relaxed text-center mt-2 mb-2">
+                    Capacito você a manifestar sua
+                    <br />
+                    melhor versão. A transformação <br />
+                    começa quando você se <br /> empodera
+                    <br />
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <div className="container2 px-2 flex flex-col items-center justify-center">
-        <h2 className="py-12 font-heading text-center text-2xl tracking-wider font-semibold">
+      <div className="container2 mx-auto p-5 flex flex-col items-center justify-center">
+        <h2 className="py-10 font-heading text-center leading-normal text-3xl md:text-4xl tracking-wider font-semibold">
           Nossos cursos
         </h2>
       </div>
-      <section className="container2 px-5 grid grid-cols-1 md:grid-cols-3 gap-14 ">
+      <section className="container2 mx-auto p-5  grid grid-cols-1 md:grid-cols-3 gap-8 ">
         {[
           'workshops 18/11',
           'Retiro Ilumina em Lumiar',
@@ -216,7 +258,7 @@ export default function Home() {
         ].map((title, index) => (
           <div
             key={index}
-            className="bg-primary border-4 border-gray-200 rounded-lg shadow-lg overflow-hidden"
+            className="bg-primary border-4 border-white rounded-lg shadow-lg overflow-hidden"
           >
             <Image
               className="object-cover w-full"
@@ -243,12 +285,16 @@ export default function Home() {
           </div>
         ))}
       </section>
-      <section className="container mx-auto px-6 py-12">
-        <h2 className="text-2xl font-bold text-center mb-8">Depoimentos</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <section className="container mx-auto p-5">
+        <div className="container2 mx-auto p-5 flex flex-col items-center justify-center">
+          <h2 className="py-10 font-heading text-center leading-normal text-3xl md:text-4xl tracking-wider font-semibold">
+            Depoimentos
+          </h2>
+        </div>
+        <div className="grid grid-cols-1 max-w-[650px] mx-auto lg:grid-cols-3 lg:max-w-none gap-8">
           <div className="bg-white p-6 rounded shadow transform hover:scale-105 transition duration-200 hover:bg-pink-50 hover:opacity-90">
-            <h3 className="font-bold mb-4 text-gray-700">Fernanda H.</h3>
-            <p className="text-slate-500">
+            <h3 className="font-bold mb-4 text-gray-700 ">Fernanda H.</h3>
+            <p className="text-slate-500 text-justify justify-center tracking-wider leading-relaxed ">
               "Minha jornada com Elaine Keyko foi verdadeiramente
               transformadora. Encontrei nela não apenas uma terapeuta
               experiente, mas uma guia compassiva. Sua abordagem única e
@@ -259,7 +305,7 @@ export default function Home() {
           </div>
           <div className="bg-white p-6 rounded shadow transform hover:scale-105 transition duration-200 hover:bg-pink-50 hover:opacity-90">
             <h3 className="font-bold mb-4 text-gray-700">Rafael G.</h3>
-            <p className="text-slate-500">
+            <p className="text-slate-500 text-justify justify-center tracking-wider leading-relaxed ">
               "Conhecer a Elaine foi um divisor de águas na minha vida. Sua
               integração de terapias como Thetahealing e Constelação Familiar
               criou um espaço seguro para explorar profundamente minhas
@@ -270,7 +316,7 @@ export default function Home() {
           </div>
           <div className="bg-white p-6 rounded shadow transform hover:scale-105 transition duration-200 hover:bg-pink-50 hover:opacity-90">
             <h3 className="font-bold mb-4 text-gray-700">Bruna F.</h3>
-            <p className="text-slate-500">
+            <p className="text-slate-500 text-justify justify-center tracking-wider leading-relaxed ">
               "Elaine Keyko é mais do que uma terapeuta; é uma facilitadora de
               mudanças positivas. Sua atenção individualizada e compreensão
               profunda me ajudaram a superar bloqueios emocionais que eu
@@ -282,105 +328,103 @@ export default function Home() {
         </div>
       </section>
       <FaqSection />
-      <section className="container mx-auto px-6 py-8 bg-white dark:bg-neutral-50 shadow-md rounded-lg">
-        <h2 className="text-2xl font-bold text-center mb-8 text-slate-700">
-          Compromisso com o Bem-Estar: Transformando Vidas, Nutrindo Almas
-        </h2>
-        <div className="text-slate-500 text-center">
-          <h3 className="font-bold mt-4 text-slate-700 tracking-wider font-heading text-lg py-2">
+      <section className="container mx-auto bg-white dark:bg-neutral-50 shadow-md rounded-lg">
+        <div className="container2 mx-auto text-center p-5 flex flex-col items-center justify-center">
+          <h2 className="py-10 font-heading text-center leading-normal text-3xl md:text-4xl tracking-wider font-semibold">
+            Compromisso com o Bem-Estar
+          </h2>
+        </div>
+        <div className="text-center p-5">
+          <h3 className="tracking-widest font-heading text-lg py-6">
             1. Transformação Profunda:
           </h3>
-          <p>
-            Estamos comprometidos em proporcionar uma transformação profunda{' '}
-            <br />
-            que vá além das superfícies, abordando os alicerces de suas
-            experiências e emoções.
+          <p className="leading-relaxed text-justify max-w-[550px] mx-auto text-slate-500 ">
+            Estamos comprometidos em proporcionar uma transformação profunda que
+            vá além das superfícies, abordando os alicerces de suas experiências
+            e emoções.
           </p>
-          <p className="font-semibold text-slate-600 py-2 tracking-widest text-sm">
-            Cada sessão é uma oportunidade de mergulhar nas camadas mais <br />
+          <p className="leading-relaxed text-justify max-w-[550px] mx-auto text-slate-500 ">
+            Cada sessão é uma oportunidade de mergulhar nas camadas mais
             profundas, desbloqueando potenciais ocultos.
           </p>
 
-          <h3 className="font-bold mt-4 text-slate-700 tracking-wider font-heading text-lg py-2">
+          <h3 className="tracking-widest font-heading text-lg py-6">
             2. Abordagem Personalizada:
           </h3>
-          <p>
-            Sua jornada é única, e nossa abordagem é moldada para atender <br />
+          <p className="leading-relaxed text-justify max-w-[550px] mx-auto text-slate-500 ">
+            Sua jornada é única, e nossa abordagem é moldada para atender
             especificamente às suas necessidades individuais.
           </p>
-          <p className="font-semibold text-slate-600  py-2 tracking-widest text-sm">
-            Não há soluções universais; cada estratégia é cuidadosamente <br />
+          <p className="leading-relaxed text-justify max-w-[550px] mx-auto text-slate-500 ">
+            Não há soluções universais; cada estratégia é cuidadosamente
             adaptada para refletir sua singularidade.
           </p>
 
-          <h3 className="font-bold mt-4 text-slate-700 tracking-wider font-heading text-lg py-2">
+          <h3 className="tracking-widest font-heading text-lg py-6">
             3. Integralidade Biopsicossocial:
           </h3>
-          <p>
+          <p className="leading-relaxed text-justify max-w-[550px] mx-auto text-slate-500 ">
             Enxergamos você em sua totalidade, reconhecendo a interconexão entre
             corpo, mente e espírito.
           </p>
-          <p className="font-semibold text-slate-600  py-2 tracking-widest text-sm">
-            Ao honrar essa integralidade, promovemos um equilíbrio <br />
-            que vai além do físico, permeando o âmago de sua existência.
+          <p className="leading-relaxed text-justify max-w-[550px] mx-auto text-slate-500 ">
+            Ao honrar essa integralidade, promovemos um equilíbrio que vai além
+            do físico, permeando o âmago de sua existência.
           </p>
 
-          <h3 className="font-bold mt-4 text-slate-700 tracking-wider font-heading text-lg py-2">
+          <h3 className="tracking-widest font-heading text-lg py-6">
             4. Apoio Contínuo:
           </h3>
-          <p>
-            Nosso compromisso transcende as sessões individuais; <br />
-            estamos aqui para apoiá-lo ao longo de sua jornada contínua.
+          <p className="leading-relaxed text-justify max-w-[550px] mx-auto text-slate-500 ">
+            Nosso compromisso transcende as sessões individuais; estamos aqui
+            para apoiá-lo ao longo de sua jornada contínua.
           </p>
-          <p className="font-semibold text-slate-600  py-2 tracking-widest text-sm">
+          <p className="leading-relaxed text-justify max-w-[550px] mx-auto text-slate-500 ">
             Seu crescimento não é linear; estamos aqui para fornecer suporte{' '}
-            <br />
             constante em cada passo, mesmo nos momentos desafiadores.
           </p>
 
-          <h3 className="font-bold mt-4 text-slate-700 tracking-wider font-heading text-lg py-2">
+          <h3 className="tracking-widest font-heading text-lg py-6">
             5. Sementes de Empoderamento:
           </h3>
-          <p>
-            Plantamos sementes de empoderamento, nutrindo a autonomia <br />e a
+          <p className="leading-relaxed text-justify max-w-[550px] mx-auto text-slate-500 ">
+            Plantamos sementes de empoderamento, nutrindo a autonomiae a
             capacidade de autorregulação.
           </p>
-          <p className="font-semibold text-slate-600 py-2 tracking-widest text-sm">
-            Não apenas buscamos solucionar desafios imediatos, mas também <br />
+          <p className="leading-relaxed text-justify max-w-[550px] mx-auto text-slate-500 ">
+            Não apenas buscamos solucionar desafios imediatos, mas também
             capacitamos você a enfrentar futuros obstáculos com confiança.
           </p>
 
-          <h3 className="font-bold mt-4 text-slate-700 tracking-wider font-heading text-lg py-2">
+          <h3 className="tracking-widest font-heading text-lg py-6">
             Sua Transformação é Nosso Compromisso:
           </h3>
-          <p className="py-2 tracking-widest text-sm">
-            Em cada interação, nossa missão é clara: promover uma transformação{' '}
-            <br />
-            profunda e duradoura, nutrindo sua jornada de autodescoberta. <br />
-            Seu bem-estar holístico é mais do que um objetivo; <br />
-            é a essência do nosso compromisso. <br /> Juntos, embarcamos na
-            busca contínua pela sua melhor versão.
+          <p className="leading-relaxed text-justify max-w-[550px] mx-auto mb-14 text-slate-500">
+            Em cada interação, nossa missão é clara: promover uma transformação
+            profunda e duradoura, nutrindo sua jornada de autodescoberta. Seu
+            bem-estar holístico é mais do que um objetivo; é a essência do nosso
+            compromisso. Juntos, embarcamos na busca contínua pela sua melhor
+            versão.
           </p>
         </div>
       </section>
 
-      <section className="container mx-auto px-6 py-8">
-        <h2 className="text-2xl font-bold text-center mb-8">
-          Inicie Sua Jornada de Transformação Agora: Agende uma Sessão com
-          Elaine Keyko
+      <section className="container mx-auto p-5">
+        <h2 className=" py-10 font-heading text-center leading-normal text-3xl md:text-4xl tracking-wider font-semibold">
+          Inicie Sua Jornada de Transformação Agora: <br /> Agende uma Sessão
+          com Elaine Keyko
         </h2>
-        <div className="">
+        <div className="grid grid-cols-1 mx-auto md:grid-cols-2 lg:max-w-none gap-8">
           <div>
-            <p>
+            <p className="leading-relaxed text-justify mx-auto max-w-[550px] p-5">
               Você está pronto para embarcar em uma jornada de autodescoberta e
-              transformação? <br />
-              Elaine Keyko está aqui para guiá-lo nesse caminho único e pessoal.
-              Sua jornada começa com um simples passo.
+              transformação? Elaine Keyko está aqui para guiá-lo nesse caminho
+              único e pessoal. Sua jornada começa com um simples passo.
             </p>
-            <h3 className="font-bold mt-4">
+            <h3 className="font-bold p-5 text-justify mx-auto max-w-[550px]">
               Por Que Agendar uma Sessão com Elaine Keyko?
             </h3>
-            <ul className="list-disc ml-5">
+            <ul className="list-disc p-5 ml-auto leading-relaxed text-justify mx-auto max-w-[550px]">
               <li>
                 Abordagem Personalizada: Cada sessão é adaptada às suas
                 necessidades exclusivas.
@@ -394,19 +438,42 @@ export default function Home() {
                 alcançar equilíbrio e plenitude.
               </li>
             </ul>
-            <p className="mt-4">Não Espere, Inicie Agora:</p>
-
-            <div className="flex justify-center">
-              <a
-                href="https://api.whatsapp.com/send/?phone=5521980943935&text&type=phone_number&app_absent=0"
-                className="mt-4 bg-primary text-white font-bold py-2 px-4 tracking-wider rounded inline-block transition-all duration-200 hover:scale-105"
-              >
-                Agende uma Sessão
-              </a>
-            </div>
+            <p className="mt-4 p-5 leading-relaxed text-justify mx-auto max-w-[550px]">
+              Não Espere, Inicie Agora:
+            </p>
+          </div>
+          <div className="container mx-auto p-5 flex justify-center items-center">
+            <Image
+              className="object-cover w-full h-full border-4 border-white dark:border-stone-200 rounded-lg shadow-2xl z-10 hidden md:block"
+              src={image6}
+              alt="Keyko Terapias pessoas na roda"
+              loading="lazy"
+            />
           </div>
         </div>
+        <div className="flex justify-center leading-relaxed text-justify mx-auto">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://api.whatsapp.com/send/?phone=5521980943935&text&type=phone_number&app_absent=0"
+            aria-label="Whatsapp"
+            className="mt-4 mb-14 bg-primary text-white font-bold py-2 px-4 tracking-wider rounded inline-block transition-all duration-200 hover:scale-105"
+          >
+            Agende uma Sessão
+          </a>
+        </div>
       </section>
+
+      <div className="fixed right-0 bottom-6 mb-4 mr-4 z-20">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://api.whatsapp.com/send/?phone=5521980943935&text&type=phone_number&app_absent=0"
+          aria-label="Whatsapp"
+        >
+          <IoLogoWhatsapp className="text-green-500 text-5xl sm:text-6xl" />
+        </a>
+      </div>
     </main>
   )
 }

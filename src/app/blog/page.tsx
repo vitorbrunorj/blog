@@ -11,15 +11,16 @@ export default function Blog(): JSX.Element {
         <section className="container3 bg-gradient-to-b from-primary to-white dark:bg-gradient-to-b dark:from-darkPrimary dark:to-neutral-300">
           <div className="bg-gradient-to-b from-primary to-white dark:bg-gradient-to-b dark:from-darkPrimary dark:to-neutral-300 min-h-[500px] grid grid-cols-1 lg:grid-cols-2 gap-2 relative">
             <div className="flex items-start justify-center h-full">
-              <h1 className="grid leading-snug text-slate-50 text-4xl sm:text-5xl tracking-wider py-6 lg:container lg:grid lg:justify-end lg:px-2 lg:py-36 ">
-                Bem-vindo à Jornada
-                <br />
-                de Transformação
-                <br />
-                <span className="leading-snug text-slate-800 text-3xl sm:text-4xl  font-heading font-semibold tracking-wider">
-                  com Elaine Keyko,
+              <h1 className="grid leading-snug text-slate-50 text-3xl sm:text-4xl tracking-wider py-6 lg:container lg:grid lg:justify-end lg:px-2 lg:py-36 ">
+                <span className="font-heading">
+                  Navegue pelo nosso blog
                   <br />
-                  Terapeuta Integrativa!
+                  para insights diários,
+                  <br />
+                </span>
+                <span className="leading-snug text-slate-800 text-2xl sm:text-3xl font-semibold tracking-wider">
+                  dicas e histórias que alimentam
+                  <br />o corpo, a mente e a alma.
                 </span>
               </h1>
             </div>
