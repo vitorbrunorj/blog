@@ -19,15 +19,23 @@ import { IoLogoWhatsapp } from 'react-icons/io'
 export default function Home() {
   return (
     <main>
-      <section className="bg-gradient-to-b from-primary to-white dark:bg-gradient-to-b dark:from-darkPrimary dark:to-neutral-300">
-        <div className="bg-gradient-to-b from-primary to-white dark:bg-gradient-to-b dark:from-darkPrimary dark:to-neutral-300 min-h-[500px] grid grid-cols-1 lg:grid-cols-2 relative container2">
-          <div className="flex items-center justify-center">
-            <h1 className="">
-              Bem-vindo à Jornada de Transformação com Elaine Keyko, Terapeuta
-              Integrativa!
+      <section className="container3 bg-gradient-to-b from-primary to-white dark:bg-gradient-to-b dark:from-darkPrimary dark:to-neutral-300">
+        <div className="bg-gradient-to-b from-primary to-white dark:bg-gradient-to-b dark:from-darkPrimary dark:to-neutral-300 min-h-[500px] grid grid-cols-1 lg:grid-cols-2 gap-2 relative">
+          <div
+            className="flex mt-10 sm:mt-16 items-center justify-center lg:justify-end lg:ml-auto mx-auto lg:mx-0 lg:-mt-16"
+            style={{ maxWidth: '700px' }}
+          >
+            <h1 className="grid leading-snug text-slate-50 text-4xl sm:text-5xl lg:text-5xl tracking-widest lg:grid">
+              <span className="font-heading">
+                Bem-vindo à Jornada <br />
+                de Transformação
+              </span>
+              <span className="leading-snug text-slate-700 text-3xl sm:text-4xl lg:text-4xl font-bold tracking-widest">
+                com Elaine Keyko, <br /> Terapeuta Integrativa!
+              </span>
             </h1>
           </div>
-          <div>
+          <div className="flex flex-col items-center justify-center lg:mt-2 lg:grid lg:justify-start">
             <Link href="/">
               <Image
                 className="min-w-[200px] w-[525px]"
@@ -36,8 +44,7 @@ export default function Home() {
               />
             </Link>
           </div>
-
-          <div className="absolute z-10 bottom-[-1px] dark:hidden">
+          <div className="flex flex-col justify-center absolute z-10 bottom-[-1px] dark:hidden">
             <Link href="/">
               <Image
                 className="object-cover"
@@ -46,7 +53,7 @@ export default function Home() {
               />
             </Link>
           </div>
-          <div className="justify-center absolute z-10 bottom-[-1px] hidden dark:flex w-full">
+          <div className="flex-col justify-end absolute z-10 bottom-[-1px] hidden dark:flex w-full">
             <Link href="/">
               <Image
                 className="object-cover"
@@ -58,10 +65,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container2 p-5 text-center">
+      <section className="container2 p-4 text-center">
         <div className="flex items-center justify-center">
           <h2 className="leading-relaxed p-2 text-lg text-justify font-light tracking-wider max-w-[650px]">
-            <p>
+            <p style={{ textIndent: '30px' }}>
               {' '}
               Olá, sou Elaine Keyko, Terapeuta Integrativa, dedicada a guiar
               indivíduos em uma jornada de autoconhecimento e libertação.
@@ -70,13 +77,13 @@ export default function Home() {
               significativas.{' '}
             </p>
             <br />
-            <p>
+            <p style={{ textIndent: '30px' }}>
               Ofereço uma abordagem única, aliada à experiência adquirida em
               minha formação acadêmica, conduzindo transformações pessoais por
               meio das Terapias Integrativas.{' '}
             </p>{' '}
             <br />
-            <p>
+            <p style={{ textIndent: '30px' }}>
               {' '}
               Meu propósito é auxiliar na superação de obstáculos emocionais,
               possibilitando a manifestação da melhor versão de cada indivíduo.
@@ -88,7 +95,7 @@ export default function Home() {
       </section>
 
       <section className="container2 flex">
-        <div className="container mx-auto p-5 flex justify-center items-center">
+        <div className="container mx-auto p-4 flex justify-center items-center">
           <Image
             className="object-cover w-full h-full border-4 border-white dark:border-stone-200 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-500 z-10 "
             src={image2}
@@ -97,13 +104,13 @@ export default function Home() {
           />
         </div>
       </section>
-      <div className="container2 mx-auto p-5 flex flex-col items-center justify-center">
+      <div className="container2 mx-auto p-4 flex flex-col items-center justify-center">
         <h2 className="py-10 font-heading text-center leading-normal text-3xl md:text-4xl tracking-wider font-semibold">
           Desperte sua Melhor Versão
         </h2>
       </div>
 
-      <section className="container mx-auto p-5 ">
+      <section className="container mx-auto p-4 ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="bg-white rounded-lg shadow-md transform hover:scale-105 transition duration-200 hover:bg-pink-50 hover:opacity-90">
             <div className="p-4 text-slate-700">
@@ -245,12 +252,12 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="container2 mx-auto p-5 flex flex-col items-center justify-center">
+      <div className="container2 mx-auto p-4 flex flex-col items-center justify-center">
         <h2 className="py-10 font-heading text-center leading-normal text-3xl md:text-4xl tracking-wider font-semibold">
           Nossos cursos
         </h2>
       </div>
-      <section className="container2 mx-auto p-5  grid grid-cols-1 md:grid-cols-3 gap-8 ">
+      <section className="container2 mx-auto p-4  grid grid-cols-1 md:grid-cols-3 gap-8 ">
         {[
           'workshops 18/11',
           'Retiro Ilumina em Lumiar',
@@ -276,7 +283,7 @@ export default function Home() {
                 <br />
               </p>
               <Link
-                href="/contatos"
+                href="/servicos"
                 className="inline-block bg-white text-center py-2 px-4 text-primary font-bold tracking-wider rounded-full transition-colors duration-400 hover:bg-white hover:text-primary transform hover:scale-105"
               >
                 VER CURSO
@@ -285,8 +292,8 @@ export default function Home() {
           </div>
         ))}
       </section>
-      <section className="container mx-auto p-5">
-        <div className="container2 mx-auto p-5 flex flex-col items-center justify-center">
+      <section className="container mx-auto p-4">
+        <div className="container2 mx-auto p-4 flex flex-col items-center justify-center">
           <h2 className="py-10 font-heading text-center leading-normal text-3xl md:text-4xl tracking-wider font-semibold">
             Depoimentos
           </h2>
@@ -328,78 +335,87 @@ export default function Home() {
         </div>
       </section>
       <FaqSection />
-      <section className="container mx-auto bg-white dark:bg-neutral-50 shadow-md rounded-lg">
-        <div className="container2 mx-auto text-center p-5 flex flex-col items-center justify-center">
+      <section className="container p-4 mx-auto bg-white dark:bg-neutral-50 shadow-md rounded-lg">
+        <div className="container2 mx-auto p-4 flex flex-col items-center justify-center">
           <h2 className="py-10 font-heading text-center leading-normal text-3xl md:text-4xl tracking-wider font-semibold">
             Compromisso com o Bem-Estar
           </h2>
         </div>
-        <div className="text-center p-5">
-          <h3 className="tracking-widest font-heading text-lg py-6">
+        <div className="text-center p-4">
+          <h3 className="tracking-widest font-heading text-xl text-slate-600 py-6 ">
             1. Transformação Profunda:
           </h3>
-          <p className="leading-relaxed text-justify max-w-[550px] mx-auto text-slate-500 ">
+
+          <p
+            className="leading-relaxed text-justify max-w-[550px] mx-auto text-slate-500 tracking-wide text-base"
+            style={{ textIndent: '30px' }}
+          >
             Estamos comprometidos em proporcionar uma transformação profunda que
             vá além das superfícies, abordando os alicerces de suas experiências
-            e emoções.
-          </p>
-          <p className="leading-relaxed text-justify max-w-[550px] mx-auto text-slate-500 ">
-            Cada sessão é uma oportunidade de mergulhar nas camadas mais
-            profundas, desbloqueando potenciais ocultos.
+            e emoções. Cada sessão é uma oportunidade de mergulhar nas camadas
+            mais profundas, desbloqueando potenciais ocultos.
           </p>
 
-          <h3 className="tracking-widest font-heading text-lg py-6">
+          <h3 className="tracking-widest font-heading text-xl text-slate-600 py-6 ">
             2. Abordagem Personalizada:
           </h3>
-          <p className="leading-relaxed text-justify max-w-[550px] mx-auto text-slate-500 ">
+
+          <p
+            className="leading-relaxed text-justify max-w-[550px] mx-auto text-slate-500 tracking-wide text-base"
+            style={{ textIndent: '30px' }}
+          >
             Sua jornada é única, e nossa abordagem é moldada para atender
-            especificamente às suas necessidades individuais.
-          </p>
-          <p className="leading-relaxed text-justify max-w-[550px] mx-auto text-slate-500 ">
-            Não há soluções universais; cada estratégia é cuidadosamente
-            adaptada para refletir sua singularidade.
+            especificamente às suas necessidades individuais. Não há soluções
+            universais; cada estratégia é cuidadosamente adaptada para refletir
+            sua singularidade.
           </p>
 
-          <h3 className="tracking-widest font-heading text-lg py-6">
+          <h3 className="tracking-widest font-heading text-xl text-slate-600 py-6 ">
             3. Integralidade Biopsicossocial:
           </h3>
-          <p className="leading-relaxed text-justify max-w-[550px] mx-auto text-slate-500 ">
+          <p
+            className="leading-relaxed text-justify max-w-[550px] mx-auto text-slate-500 tracking-wide text-base"
+            style={{ textIndent: '30px' }}
+          >
             Enxergamos você em sua totalidade, reconhecendo a interconexão entre
-            corpo, mente e espírito.
-          </p>
-          <p className="leading-relaxed text-justify max-w-[550px] mx-auto text-slate-500 ">
-            Ao honrar essa integralidade, promovemos um equilíbrio que vai além
-            do físico, permeando o âmago de sua existência.
+            corpo, mente e espírito. Ao honrar essa integralidade, promovemos um
+            equilíbrio que vai além do físico, permeando o âmago de sua
+            existência.
           </p>
 
-          <h3 className="tracking-widest font-heading text-lg py-6">
+          <h3 className="tracking-widest font-heading text-xl text-slate-600 py-6 ">
             4. Apoio Contínuo:
           </h3>
-          <p className="leading-relaxed text-justify max-w-[550px] mx-auto text-slate-500 ">
+          <p
+            className="leading-relaxed text-justify max-w-[550px] mx-auto text-slate-500 tracking-wide text-base"
+            style={{ textIndent: '30px' }}
+          >
             Nosso compromisso transcende as sessões individuais; estamos aqui
-            para apoiá-lo ao longo de sua jornada contínua.
-          </p>
-          <p className="leading-relaxed text-justify max-w-[550px] mx-auto text-slate-500 ">
-            Seu crescimento não é linear; estamos aqui para fornecer suporte{' '}
-            constante em cada passo, mesmo nos momentos desafiadores.
+            para apoiá-lo ao longo de sua jornada contínua. Seu crescimento não
+            é linear; estamos aqui para fornecer suporte constante em cada
+            passo, mesmo nos momentos desafiadores.
           </p>
 
-          <h3 className="tracking-widest font-heading text-lg py-6">
+          <h3 className="tracking-widest font-heading text-xl text-slate-600 py-6 ">
             5. Sementes de Empoderamento:
           </h3>
-          <p className="leading-relaxed text-justify max-w-[550px] mx-auto text-slate-500 ">
+          <p
+            className="leading-relaxed text-justify max-w-[550px] mx-auto text-slate-500 tracking-wide text-base"
+            style={{ textIndent: '30px' }}
+          >
             Plantamos sementes de empoderamento, nutrindo a autonomiae a
-            capacidade de autorregulação.
-          </p>
-          <p className="leading-relaxed text-justify max-w-[550px] mx-auto text-slate-500 ">
-            Não apenas buscamos solucionar desafios imediatos, mas também
-            capacitamos você a enfrentar futuros obstáculos com confiança.
+            capacidade de autorregulação. Não apenas buscamos solucionar
+            desafios imediatos, mas também capacitamos você a enfrentar futuros
+            obstáculos com confiança.
           </p>
 
-          <h3 className="tracking-widest font-heading text-lg py-6">
+          <h3 className="tracking-widest font-heading text-xl text-slate-600 py-6 ">
             Sua Transformação é Nosso Compromisso:
           </h3>
-          <p className="leading-relaxed text-justify max-w-[550px] mx-auto mb-14 text-slate-500">
+          <p
+            className="leading-relaxed text-justify max-w-[550px] mx-auto text-slate-500 tracking-wide text-base mb-14"
+            style={{ textIndent: '30px' }}
+          >
             Em cada interação, nossa missão é clara: promover uma transformação
             profunda e duradoura, nutrindo sua jornada de autodescoberta. Seu
             bem-estar holístico é mais do que um objetivo; é a essência do nosso
@@ -409,22 +425,27 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container mx-auto p-5">
-        <h2 className=" py-10 font-heading text-center leading-normal text-3xl md:text-4xl tracking-wider font-semibold">
-          Inicie Sua Jornada de Transformação Agora: <br /> Agende uma Sessão
-          com Elaine Keyko
-        </h2>
-        <div className="grid grid-cols-1 mx-auto md:grid-cols-2 lg:max-w-none gap-8">
-          <div>
-            <p className="leading-relaxed text-justify mx-auto max-w-[550px] p-5">
+      <section className="container mx-auto p-4">
+        <div className="container2 mx-auto p-4 flex flex-col items-center justify-center">
+          <h2 className="py-10 font-heading text-center leading-normal text-3xl md:text-4xl tracking-wider font-semibold">
+            Inicie Sua Jornada de Transformação Agora: <br /> Agende uma Sessão
+            com Elaine Keyko
+          </h2>
+        </div>
+        <div className="p-4 grid grid-cols-1 mx-auto md:grid-cols-2 lg:max-w-none gap-8">
+          <div className="p-4">
+            <p
+              className="leading-relaxed text-justify max-w-[550px] mx-auto tracking-wide text-base"
+              style={{ textIndent: '30px' }}
+            >
               Você está pronto para embarcar em uma jornada de autodescoberta e
               transformação? Elaine Keyko está aqui para guiá-lo nesse caminho
               único e pessoal. Sua jornada começa com um simples passo.
             </p>
-            <h3 className="font-bold p-5 text-justify mx-auto max-w-[550px]">
+            <h3 className="font-bold p-4 text-justify mx-auto max-w-[550px]">
               Por Que Agendar uma Sessão com Elaine Keyko?
             </h3>
-            <ul className="list-disc p-5 ml-auto leading-relaxed text-justify mx-auto max-w-[550px]">
+            <ul className="list-disc p-4 ml-auto leading-relaxed text-justify mx-auto max-w-[550px]">
               <li>
                 Abordagem Personalizada: Cada sessão é adaptada às suas
                 necessidades exclusivas.
@@ -438,16 +459,17 @@ export default function Home() {
                 alcançar equilíbrio e plenitude.
               </li>
             </ul>
-            <p className="mt-4 p-5 leading-relaxed text-justify mx-auto max-w-[550px]">
+            <p className="mt-4 p-4 leading-relaxed text-justify mx-auto max-w-[550px] text-lg font-bold">
               Não Espere, Inicie Agora:
             </p>
           </div>
-          <div className="container mx-auto p-5 flex justify-center items-center">
+          <div className="container mx-auto p-4 flex justify-center items-center">
             <Image
-              className="object-cover w-full h-full border-4 border-white dark:border-stone-200 rounded-lg shadow-2xl z-10 hidden md:block"
+              className="object-cover border-4 border-white dark:border-stone-200 rounded-lg shadow-2xl z-10 hidden md:block"
               src={image6}
               alt="Keyko Terapias pessoas na roda"
               loading="lazy"
+              style={{ width: '242px', height: '390px' }}
             />
           </div>
         </div>

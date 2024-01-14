@@ -3,6 +3,7 @@ import Image from 'next/image'
 import onda from '../../public/onda.png'
 import ondaDark from '../../public/ondaDark.png'
 import banner3 from '../../public/banner3.png'
+import { IoLogoWhatsapp } from 'react-icons/io'
 
 export default function Contato(): JSX.Element {
   return (
@@ -10,22 +11,21 @@ export default function Contato(): JSX.Element {
       <main>
         <section className="container3 bg-gradient-to-b from-primary to-white dark:bg-gradient-to-b dark:from-darkPrimary dark:to-neutral-300">
           <div className="bg-gradient-to-b from-primary to-white dark:bg-gradient-to-b dark:from-darkPrimary dark:to-neutral-300 min-h-[500px] grid grid-cols-1 lg:grid-cols-2 gap-2 relative">
-            <div className="flex items-start justify-center h-full">
-              <h1 className="grid leading-snug text-slate-50 text-4xl sm:text-5xl tracking-wider py-6 lg:container lg:grid lg:justify-end lg:px-2 lg:py-36 ">
+            <div
+              className="flex mt-10 sm:mt-16 items-center justify-center lg:justify-end lg:ml-auto mx-auto lg:mx-0 lg:-mt-16"
+              style={{ maxWidth: '700px' }}
+            >
+              <h1 className="grid leading-snug text-slate-50 text-4xl sm:text-5xl lg:text-5xl tracking-widest lg:grid">
                 <span className="font-heading">
-                  Descubra terapias
-                  <br />
+                  Descubra terapias <br />
                   integrativas e cursos
-                  <br />
                 </span>
-                <span className="leading-snug text-slate-800 py-2 text-2xl sm:text-3xl font-semibold tracking-wider">
-                  projetados para nutrir seu
-                  <br />
-                  bem-estar e harmonia interior.
+                <span className="leading-snug text-slate-700 text-3xl sm:text-4xl lg:text-4xl font-bold tracking-widest">
+                  projetados para nutrir seu <br /> bem-estar e harmonia
                 </span>
               </h1>
             </div>
-            <div className="flex flex-col items-center justify-center lg:mt-6 lg:container lg:grid lg:justify-start">
+            <div className="flex flex-col items-center justify-center lg:mt-2 lg:grid lg:justify-start">
               <Link href="/">
                 <Image
                   className="min-w-[200px] w-[525px]"
@@ -54,6 +54,16 @@ export default function Contato(): JSX.Element {
             </div>
           </div>
         </section>
+        <div className="fixed right-0 bottom-6 mb-4 mr-4 z-20">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://api.whatsapp.com/send/?phone=5521980943935&text&type=phone_number&app_absent=0"
+            aria-label="Whatsapp"
+          >
+            <IoLogoWhatsapp className="text-green-500 text-5xl sm:text-6xl" />
+          </a>
+        </div>
       </main>
     </>
   )

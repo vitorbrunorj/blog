@@ -59,20 +59,20 @@
 }
 
 body {
-  min-width: 336px;
+  min-width: 340px;
 }
 
 body {
   font-size: 100%;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1220px) {
   html {
-    font-size: 90%;
+    font-size: 85%;
   }
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1023px) {
   html {
     font-size: 100%;
   }
@@ -86,25 +86,37 @@ body {
 
 @media (max-width: 560px) {
   html {
-    font-size: 95%;
+    font-size: 100%;
   }
 }
 
 @media (max-width: 530px) {
   html {
-    font-size: 90%;
+    font-size: 100%;
   }
 }
 
 @media (max-width: 500px) {
   html {
-    font-size: 85%;
+    font-size: 100%;
   }
 }
 
 @media (max-width: 480px) {
   html {
-    font-size: 80%;
+    font-size: 83%;
+  }
+}
+
+@media (max-width: 390px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 360px) {
+  html {
+    font-size: 70%;
   }
 }
 
