@@ -67,7 +67,7 @@ export default function Blog(): JSX.Element {
             href="https://api.whatsapp.com/send/?phone=5521980943935&text&type=phone_number&app_absent=0"
             aria-label="Whatsapp"
           >
-            <IoLogoWhatsapp className="text-green-500 text-5xl sm:text-6xl" />
+            <IoLogoWhatsapp className="text-green-500 text-5xl sm:text-6xl hover:scale-110" />
           </a>
         </div>
         <div className="container2 mx-auto p-4 flex flex-col items-center justify-center">
@@ -77,7 +77,7 @@ export default function Blog(): JSX.Element {
         </div>
 
         <section className="container2 p-4 flex space-x-8 mx-auto justify-center">
-          <section className="flex w-3/12 flex-col space-y-4">
+          <section className="flex w-3/12 flex-col space-y-8">
             <div className="w-full rounded-xl shadow-md bg-white p-4 text-justify">
               <Image
                 className="object-cover z-10 w-full h-auto mx-auto justify-center"
@@ -89,7 +89,7 @@ export default function Blog(): JSX.Element {
                   maxHeight: '420px'
                 }}
               />
-              <div className="p-4 text-center mt-2 text-slate-500 tracking-wide text-base">
+              <div className="p-4 text-center mt-2 text-slate-500 tracking-wide text-base space ">
                 <h2 className="font-heading text-xl mb-2 text-slate-600">
                   Elaine Keyko
                 </h2>
@@ -127,15 +127,16 @@ export default function Blog(): JSX.Element {
                 alt="Keyko Terapias pessoas na roda"
                 loading="lazy"
                 style={{
-                  maxWidth: '6680px',
-                  maxHeight: '420px'
+                  maxWidth: '780px',
+                  maxHeight: '482px'
                 }}
               />
-              <a href="/postagem-principal" className="hover:underline">
-                <h2 className="font-heading text-center leading-normal text-2xl md:text-3xl tracking-wider font-semibold mt-5 text-slate-600">
+              <a href="/postagem-principal">
+                <h2 className="font-heading text-center leading-normal text-2xl md:text-3xl tracking-wider font-semibold mt-5 text-slate-600 hover:text-primary transition-all hover:scale-105">
                   Título da Postagem
                 </h2>
               </a>
+
               <p
                 className="leading-relaxed text-justify max-w-[550px] mx-auto tracking-wide text-base"
                 style={{ textIndent: '30px' }}
@@ -167,8 +168,8 @@ export default function Blog(): JSX.Element {
                     maxHeight: '420px'
                   }}
                 />
-                <a href="/postagem-principal" className="hover:underline">
-                  <h2 className="font-heading text-center leading-normal text-2xl md:text-3xl tracking-wider font-semibold mt-5 text-slate-600">
+                <a href="/postagem-principal">
+                  <h2 className="font-heading text-center leading-normal text-2xl md:text-3xl tracking-wider font-semibold mt-5 text-slate-600 hover:text-primary transition-all hover:scale-105">
                     Título da Postagem
                   </h2>
                 </a>
@@ -194,8 +195,8 @@ export default function Blog(): JSX.Element {
                     maxHeight: '420px'
                   }}
                 />
-                <a href="/postagem-principal" className="hover:underline">
-                  <h2 className="font-heading text-center leading-normal text-2xl md:text-3xl tracking-wider font-semibold mt-5 text-slate-600">
+                <a href="/postagem-principal">
+                  <h2 className="font-heading text-center leading-normal text-2xl md:text-3xl tracking-wider font-semibold mt-5 text-slate-600 hover:text-primary transition-all hover:scale-105">
                     Título da Postagem
                   </h2>
                 </a>
@@ -221,8 +222,8 @@ export default function Blog(): JSX.Element {
                     maxHeight: '420px'
                   }}
                 />
-                <a href="/postagem-principal" className="hover:underline">
-                  <h2 className="font-heading text-center leading-normal text-2xl md:text-3xl tracking-wider font-semibold mt-5 text-slate-600">
+                <a href="/postagem-principal">
+                  <h2 className="font-heading text-center leading-normal text-2xl md:text-3xl tracking-wider font-semibold mt-5 text-slate-600 hover:text-primary transition-all hover:scale-105">
                     Título da Postagem
                   </h2>
                 </a>
@@ -248,8 +249,8 @@ export default function Blog(): JSX.Element {
                     maxHeight: '420px'
                   }}
                 />
-                <a href="/postagem-principal" className="hover:underline">
-                  <h2 className="font-heading text-center leading-normal text-2xl md:text-3xl tracking-wider font-semibold mt-5 text-slate-600">
+                <a href="/postagem-principal">
+                  <h2 className="font-heading text-center leading-normal text-2xl md:text-3xl tracking-wider font-semibold mt-5 text-slate-600 hover:text-primary transition-all hover:scale-105">
                     Título da Postagem
                   </h2>
                 </a>

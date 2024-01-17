@@ -42,7 +42,7 @@ class MyDocument extends Document<MyDocumentProps> {
 
           <link rel="manifest" href="../public/manifest.json" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta name="theme-color" content="#000000" />
+          <meta name="theme-color" content="#" />
           <meta name="description" content={this.props.description} />
           <meta name="author" content="Lucas Nhimi" />
           <meta

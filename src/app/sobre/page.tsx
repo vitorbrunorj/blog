@@ -192,7 +192,7 @@ export default function Sobre(): JSX.Element {
             href="https://api.whatsapp.com/send/?phone=5521980943935&text&type=phone_number&app_absent=0"
             aria-label="Whatsapp"
           >
-            <IoLogoWhatsapp className="text-green-500 text-5xl sm:text-6xl" />
+            <IoLogoWhatsapp className="text-green-500 text-5xl sm:text-6xl hover:scale-110" />
           </a>
         </div>
       </main>
