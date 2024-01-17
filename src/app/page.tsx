@@ -9,6 +9,7 @@ import image3 from '../public/image3.webp'
 import image4 from '../public/image4.webp'
 import image5 from '../public/image5.webp'
 import image6 from '../public/image6.webp'
+import image6Dark from '../public/image6Dark.webp'
 import FaqSection from '@/app/_components/faq-section'
 import { FaCompass } from 'react-icons/fa'
 import { PiFlowerLotusFill, PiHandsPrayingFill } from 'react-icons/pi'
@@ -41,6 +42,7 @@ export default function Home() {
                 className="min-w-[200px] w-[525px]"
                 src={banner}
                 alt="Keyko Terapias imagem"
+                loading="eager"
               />
             </Link>
           </div>
@@ -50,6 +52,7 @@ export default function Home() {
                 className="object-cover"
                 src={onda}
                 alt="Keyko Terapias onda"
+                loading="eager"
               />
             </Link>
           </div>
@@ -59,6 +62,7 @@ export default function Home() {
                 className="object-cover"
                 src={ondaDark}
                 alt="Keyko Terapias onda dark"
+                loading="eager"
               />
             </Link>
           </div>
@@ -465,14 +469,22 @@ export default function Home() {
           </div>
           <div className="container mx-auto p-4 flex justify-center items-center">
             <Image
-              className="object-cover border-4 border-white dark:border-stone-200 rounded-lg shadow-2xl z-10 hidden md:block"
+              className="object-cover border-4 border-white dark:border-stone-200 rounded-lg shadow-2xl z-10 hidden md:block dark:hidden"
               src={image6}
+              alt="Keyko Terapias pessoas na roda"
+              loading="lazy"
+              style={{ width: '242px', height: '390px' }}
+            />
+            <Image
+              className="object-cover border-4 border-white dark:border-stone-200 rounded-lg shadow-2xl z-10 hidden dark:md:block w-full"
+              src={image6Dark}
               alt="Keyko Terapias pessoas na roda"
               loading="lazy"
               style={{ width: '242px', height: '390px' }}
             />
           </div>
         </div>
+
         <div className="flex justify-center leading-relaxed text-justify mx-auto">
           <a
             target="_blank"

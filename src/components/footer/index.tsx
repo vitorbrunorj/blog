@@ -63,7 +63,18 @@ export default function Footer() {
       <div className=" ">
         <div className="container flex items-center justify-center px-2 py-2 h-8 ">
           <hr />
-          <p>© 2024 Keyko Terapias - Created by Vitor Bruno </p>
+          <p>
+            © 2024 Keyko Terapias -{' '}
+            <a
+              href="https://www.vitorbruno.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="font-semibold text-slate-600 hover:font-semibold hover:text-sky-600">
+                Created by Vitor Bruno
+              </span>
+            </a>
+          </p>
         </div>
       </div>
     </>

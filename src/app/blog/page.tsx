@@ -3,7 +3,10 @@ import Image from 'next/image'
 import onda from '../../public/onda.png'
 import ondaDark from '../../public/ondaDark.png'
 import banner4 from '../../public/banner4.png'
+import image5 from '../../public/image5.webp'
+import image8 from '../../public/image8.png'
 import { IoLogoWhatsapp } from 'react-icons/io'
+import { PaginationDemo } from '@/app/_components/pagination'
 
 export default function Blog(): JSX.Element {
   return (
@@ -29,7 +32,7 @@ export default function Blog(): JSX.Element {
               </h1>
             </div>
             <div className="flex flex-col items-center justify-center lg:mt-2 lg:grid lg:justify-start">
-              <Link href="/">
+              <Link href="/blog">
                 <Image
                   className="min-w-[200px] w-[525px]"
                   src={banner4}
@@ -38,7 +41,7 @@ export default function Blog(): JSX.Element {
               </Link>
             </div>
             <div className="flex flex-col justify-center absolute z-10 bottom-[-1px] dark:hidden">
-              <Link href="/">
+              <Link href="/blog">
                 <Image
                   className="object-cover"
                   src={onda}
@@ -47,7 +50,7 @@ export default function Blog(): JSX.Element {
               </Link>
             </div>
             <div className="flex-col justify-end absolute z-10 bottom-[-1px] hidden dark:flex w-full">
-              <Link href="/">
+              <Link href="/blog">
                 <Image
                   className="object-cover"
                   src={ondaDark}
@@ -67,6 +70,206 @@ export default function Blog(): JSX.Element {
             <IoLogoWhatsapp className="text-green-500 text-5xl sm:text-6xl" />
           </a>
         </div>
+        <div className="container2 mx-auto p-4 flex flex-col items-center justify-center">
+          <h2 className="py-10 font-heading text-center leading-normal text-3xl md:text-4xl tracking-wider font-semibold">
+            Seu refúgio diário para dicas <br />e transformações.
+          </h2>
+        </div>
+
+        <section className="container2 p-4 flex space-x-8 mx-auto justify-center">
+          <section className="flex w-3/12 flex-col space-y-4">
+            <div className="w-full rounded-xl shadow-md bg-white p-4 text-justify">
+              <Image
+                className="object-cover z-10 w-full h-auto mx-auto justify-center"
+                src={image8}
+                alt="Keyko Terapias pessoas na roda"
+                loading="lazy"
+                style={{
+                  maxWidth: '100px',
+                  maxHeight: '420px'
+                }}
+              />
+              <div className="p-4 text-center mt-2 text-slate-500 tracking-wide text-base">
+                <h2 className="font-heading text-xl mb-2 text-slate-600">
+                  Elaine Keyko
+                </h2>
+                <p className="text-sm text-justify">
+                  Certificada como Consultora do Bem-Estar Mental, minha missão
+                  é criar um equilíbrio de vida que prioriza o bem-estar
+                  integral.
+                </p>
+                <div className="mt-4">
+                  <a href="/sobre" className="text-blue-500 hover:underline">
+                    Ver perfil
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="w-full rounded-xl shadow-md bg-white p-4 text-justify text-slate-500 tracking-wide text-base">
+              <h2 className="text-2xl font-bold mb-2 text-slate-700">
+                Últimas Postagens
+              </h2>
+              <div className="mb-4">
+                <h3 className="font-bold text-slate-600">Título do Destaque</h3>
+                <p>imagem e descrição imagem e descrição imagem e descrição</p>
+              </div>
+              <div className="mb-4">
+                <h3 className="font-bold text-slate-600">Título do Destaque</h3>
+                <p>imagem e descrição imagem e descrição imagem e descrição</p>
+              </div>
+            </div>
+          </section>
+          <div className="w-7/12 rounded-xl shadow-md bg-white grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-500 tracking-wide text-base">
+            <div className="md:col-span-2 p-4">
+              <Image
+                className="object-cover border-4 p-1 border-white rounded-lg shadow-2xl z-10 w-full h-auto mx-auto justify-center"
+                src={image5}
+                alt="Keyko Terapias pessoas na roda"
+                loading="lazy"
+                style={{
+                  maxWidth: '6680px',
+                  maxHeight: '420px'
+                }}
+              />
+              <a href="/postagem-principal" className="hover:underline">
+                <h2 className="font-heading text-center leading-normal text-2xl md:text-3xl tracking-wider font-semibold mt-5 text-slate-600">
+                  Título da Postagem
+                </h2>
+              </a>
+              <p
+                className="leading-relaxed text-justify max-w-[550px] mx-auto tracking-wide text-base"
+                style={{ textIndent: '30px' }}
+              >
+                Resumo da Postagem resumo Resumo da Postagem resumo Resumo da
+                Postagem resumo Resumo da Postagem resumo Resumo da Postagem
+                resumo Resumo da Postagem resumo Resumo da Postagem resumo
+                Resumo da Postagem resumo Resumo da Postagem resumo Resumo da
+                Postagem resumo
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="container2 p-4 flex space-x-8 mx-auto justify-center">
+          <section className="flex w-3/12 flex-col space-y-4">
+            <div className="w-full rounded-xl shadow-md bg-white"></div>
+          </section>
+          <div className="w-7/12 rounded-xl grid grid-cols-2 md:grid-cols-2 gap-4 tracking-wide text-base">
+            <div className="col-span-4 grid grid-cols-2 gap-6 mb-16">
+              <div className="col-span-1 rounded-xl shadow-md bg-white p-4">
+                <Image
+                  className="object-cover border-4 p-1 border-white rounded-lg shadow-2xl z-10 w-full h-auto mx-auto justify-center"
+                  src={image5}
+                  alt="Keyko Terapias pessoas na roda"
+                  loading="lazy"
+                  style={{
+                    maxWidth: '6680px',
+                    maxHeight: '420px'
+                  }}
+                />
+                <a href="/postagem-principal" className="hover:underline">
+                  <h2 className="font-heading text-center leading-normal text-2xl md:text-3xl tracking-wider font-semibold mt-5 text-slate-600">
+                    Título da Postagem
+                  </h2>
+                </a>
+                <p
+                  className="leading-relaxed text-justify max-w-[550px] mx-auto tracking-wide text-base text-slate-500"
+                  style={{ textIndent: '30px' }}
+                >
+                  Resumo da Postagem resumo Resumo da Postagem resumo Resumo da
+                  Postagem resumo Resumo da Postagem resumo Resumo da Postagem
+                  resumo Resumo da Postagem resumo Resumo da Postagem resumo
+                  Resumo da Postagem resumo Resumo da Postagem resumo Resumo da
+                  Postagem resumo
+                </p>
+              </div>
+              <div className="col-span-1 rounded-xl shadow-md bg-white p-4">
+                <Image
+                  className="object-cover border-4 p-1 border-white rounded-lg shadow-2xl z-10 w-full h-auto mx-auto justify-center"
+                  src={image5}
+                  alt="Keyko Terapias pessoas na roda"
+                  loading="lazy"
+                  style={{
+                    maxWidth: '6680px',
+                    maxHeight: '420px'
+                  }}
+                />
+                <a href="/postagem-principal" className="hover:underline">
+                  <h2 className="font-heading text-center leading-normal text-2xl md:text-3xl tracking-wider font-semibold mt-5 text-slate-600">
+                    Título da Postagem
+                  </h2>
+                </a>
+                <p
+                  className="leading-relaxed text-justify max-w-[550px] mx-auto tracking-wide text-base text-slate-500"
+                  style={{ textIndent: '30px' }}
+                >
+                  Resumo da Postagem resumo Resumo da Postagem resumo Resumo da
+                  Postagem resumo Resumo da Postagem resumo Resumo da Postagem
+                  resumo Resumo da Postagem resumo Resumo da Postagem resumo
+                  Resumo da Postagem resumo Resumo da Postagem resumo Resumo da
+                  Postagem resumo
+                </p>
+              </div>
+              <div className="col-span-1 rounded-xl shadow-md bg-white p-4">
+                <Image
+                  className="object-cover border-4 p-1 border-white rounded-lg shadow-2xl z-10 w-full h-auto mx-auto justify-center"
+                  src={image5}
+                  alt="Keyko Terapias pessoas na roda"
+                  loading="lazy"
+                  style={{
+                    maxWidth: '6680px',
+                    maxHeight: '420px'
+                  }}
+                />
+                <a href="/postagem-principal" className="hover:underline">
+                  <h2 className="font-heading text-center leading-normal text-2xl md:text-3xl tracking-wider font-semibold mt-5 text-slate-600">
+                    Título da Postagem
+                  </h2>
+                </a>
+                <p
+                  className="leading-relaxed text-justify max-w-[550px] mx-auto tracking-wide text-base text-slate-500"
+                  style={{ textIndent: '30px' }}
+                >
+                  Resumo da Postagem resumo Resumo da Postagem resumo Resumo da
+                  Postagem resumo Resumo da Postagem resumo Resumo da Postagem
+                  resumo Resumo da Postagem resumo Resumo da Postagem resumo
+                  Resumo da Postagem resumo Resumo da Postagem resumo Resumo da
+                  Postagem resumo
+                </p>
+              </div>
+              <div className="col-span-1 rounded-xl shadow-md bg-white p-4">
+                <Image
+                  className="object-cover border-4 p-1 border-white rounded-lg shadow-2xl z-10 w-full h-auto mx-auto justify-center"
+                  src={image5}
+                  alt="Keyko Terapias pessoas na roda"
+                  loading="lazy"
+                  style={{
+                    maxWidth: '6680px',
+                    maxHeight: '420px'
+                  }}
+                />
+                <a href="/postagem-principal" className="hover:underline">
+                  <h2 className="font-heading text-center leading-normal text-2xl md:text-3xl tracking-wider font-semibold mt-5 text-slate-600">
+                    Título da Postagem
+                  </h2>
+                </a>
+                <p
+                  className="leading-relaxed text-justify max-w-[550px] mx-auto tracking-wide text-base text-slate-500"
+                  style={{ textIndent: '30px' }}
+                >
+                  Resumo da Postagem resumo Resumo da Postagem resumo Resumo da
+                  Postagem resumo Resumo da Postagem resumo Resumo da Postagem
+                  resumo Resumo da Postagem resumo Resumo da Postagem resumo
+                  Resumo da Postagem resumo Resumo da Postagem resumo Resumo da
+                  Postagem resumo
+                </p>
+              </div>
+              <div className="justify-center items-center">
+                <PaginationDemo />
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   )

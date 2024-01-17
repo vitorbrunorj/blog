@@ -1,10 +1,10 @@
-import { Analytics } from '@vercel/analytics/react'
 import Head from 'next/head'
 import type { Metadata } from 'next'
 import { Open_Sans as FontSans } from 'next/font/google'
 import localFont from 'next/font/local'
 import { cn } from '@/lib/utils'
 import { Header } from '@/components/header'
+import { ProgressDemo } from '@/app/_components/progress'
 
 import { ThemeProvider } from './_components/theme-provider'
 
@@ -14,7 +14,15 @@ import dynamic from 'next/dynamic'
 const DynamicFooter = dynamic(
   async () => await import('@/components/footer').then((mod) => mod.default),
   {
-    loading: () => <div>Carregando...</div>,
+    loading: () => (
+      <div>
+        <p>
+          <ProgressDemo />
+          <br />
+          Carregando...
+        </p>
+      </div>
+    ),
     ssr: false
   }
 )
@@ -73,7 +81,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Header />
           {children}
-          <Analytics />
+
           <DynamicFooter />
         </ThemeProvider>
       </body>

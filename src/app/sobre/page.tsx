@@ -4,6 +4,7 @@ import onda from '../../public/onda.png'
 import ondaDark from '../../public/ondaDark.png'
 import banner2 from '../../public/banner2.png'
 import image7 from '../../public/image7.webp'
+import image7Dark from '../../public/image7Dark.webp'
 import { IoLogoWhatsapp } from 'react-icons/io'
 
 export default function Sobre(): JSX.Element {
@@ -26,7 +27,7 @@ export default function Sobre(): JSX.Element {
               </h1>
             </div>
             <div className="flex flex-col items-center justify-center lg:mt-2 lg:grid lg:justify-start">
-              <Link href="/">
+              <Link href="/sobre">
                 <Image
                   className="min-w-[200px] w-[525px]"
                   src={banner2}
@@ -35,7 +36,7 @@ export default function Sobre(): JSX.Element {
               </Link>
             </div>
             <div className="flex flex-col justify-center absolute z-10 bottom-[-1px] dark:hidden">
-              <Link href="/">
+              <Link href="/sobre">
                 <Image
                   className="object-cover"
                   src={onda}
@@ -44,7 +45,7 @@ export default function Sobre(): JSX.Element {
               </Link>
             </div>
             <div className="flex-col justify-end absolute z-10 bottom-[-1px] hidden dark:flex w-full">
-              <Link href="/">
+              <Link href="/sobre">
                 <Image
                   className="object-cover"
                   src={ondaDark}
@@ -157,11 +158,18 @@ export default function Sobre(): JSX.Element {
 
             <div className="container mx-auto p-4 flex justify-center items-center">
               <Image
-                className="object-cover w-full h-full border-4 border-white dark:border-stone-200 rounded-lg shadow-2xl z-10 hidden lg:block"
+                className="object-cover w-full h-full border-4 border-white dark:border-stone-200 rounded-lg shadow-2xl z-10 hidden lg:block dark:hidden"
                 src={image7}
                 alt="Keyko Terapias pessoas na roda"
                 loading="lazy"
-                style={{ height: '1200px' }}
+                style={{ height: '1420px' }}
+              />
+              <Image
+                className="object-cover w-full h-full border-4 border-white dark:border-stone-200 rounded-lg shadow-2xl z-10 hidden sm:hidden dark:lg:block"
+                src={image7Dark}
+                alt="Keyko Terapias pessoas na roda"
+                loading="lazy"
+                style={{ height: '1420px' }}
               />
             </div>
           </div>
