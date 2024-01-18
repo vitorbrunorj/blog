@@ -1,8 +1,7 @@
 export const metadata = {
   title: 'Keyko Terapias - Blog',
-  description: 'Pagina com os artigos do blog'
+  description: 'Navegue pelo Blog da Keyko Terapias'
 }
-
 export default function BlogLayout({
   children
 }: {
