@@ -1,17 +1,17 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import onda from '../../public/onda.png'
-import ondaDark from '../../public/ondaDark.png'
-import banner4 from '../../public/banner4.png'
-import blog1 from '../../public/blog1.webp'
-import blog2 from '../../public/blog2.webp'
-import blog3 from '../../public/blog3.webp'
-import blog4 from '../../public/blog4.webp'
-import blog5 from '../../public/blog5.webp'
-import image8 from '../../public/image8.png'
+import onda from '../../../public/onda.png'
+import ondaDark from '../../../public/ondaDark.png'
+import banner4 from '../../../public/banner4.png'
+import blog11 from '../../../public/blog11.webp'
+import blog12 from '../../../public/blog12.webp'
+import blog13 from '../../../public/blog13.webp'
+import blog14 from '../../../public/blog14.webp'
+import blog15 from '../../../public/image4.webp'
+import image8 from '../../../public/image8.png'
 
 import { IoLogoWhatsapp } from 'react-icons/io'
-import { PaginationDemo } from '@/app/_components/pagination'
+import { PaginationDemo } from '@/app/_components/pagination3'
 
 export default function Blog(): JSX.Element {
   return (
@@ -149,10 +149,10 @@ export default function Blog(): JSX.Element {
           </section>
           <div className="lg:w-7/12 rounded-xl shadow-md bg-white grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-500 tracking-wide text-base">
             <div className="md:col-span-2 p-4">
-              <a href="/blog/desvendando-os-misterios-do-thetahealing">
+              <a href="/blog/despertando-o-ser-integral">
                 <Image
                   className="object-cover border-4 p-1 border-white rounded-lg shadow-2xl z-10 w-full h-auto mx-auto justify-center"
-                  src={blog1}
+                  src={blog14}
                   alt="Keyko Terapias pessoas na roda"
                   loading="lazy"
                   style={{
@@ -161,18 +161,17 @@ export default function Blog(): JSX.Element {
                   }}
                 />
                 <h2 className="font-heading text-center leading-normal text-2xl md:text-2xl tracking-wider font-semibold mt-5 text-slate-600 hover:text-primary transition-all hover:scale-105">
-                  Desvendando os Mistérios do Thetahealing
+                  Despertando o Ser Integral
                 </h2>
 
                 <p
                   className="leading-relaxed text-justify max-w-[550px] mx-auto tracking-wide text-base"
                   style={{ textIndent: '30px' }}
                 >
-                  Imagine se você pudesse acessar um lugar dentro de si repleto
-                  de possibilidades, onde as crenças limitantes são desfeitas
-                  como se fossem fios de uma teia. Isso é exatamente o que o
-                  Thetahealing proporciona - uma jornada mágica para desvendar
-                  os mistérios do seu próprio ser.
+                  Ser integral vai além da mera ausência de doenças; é alcançar
+                  um equilíbrio harmônico entre corpo, mente e espírito. Vamos
+                  desbravar os mistérios da integralidade biopsicossocial e como
+                  ela pode transformar profundamente nossas vidas.
                 </p>
               </a>
             </div>
@@ -186,10 +185,10 @@ export default function Blog(): JSX.Element {
           <div className="lg:w-7/12 rounded-xl grid grid-cols-2 lg:p-0 md:grid-cols-2 gap-4 tracking-wide text-base">
             <div className="col-span-4 grid md:grid-cols-2 gap-6 mb-16">
               <div className="col-span-1 rounded-xl shadow-md bg-white p-4">
-                <a href="/blog/contelacao-familiar">
+                <a href="/blog/constelacao-familiar-relacionamentos-saudaveis">
                   <Image
                     className="object-cover border-4 p-1 border-white rounded-lg shadow-2xl z-10 w-full h-auto mx-auto justify-center"
-                    src={blog2}
+                    src={blog11}
                     alt="Keyko Terapias pessoas na roda"
                     loading="lazy"
                     style={{
@@ -199,24 +198,25 @@ export default function Blog(): JSX.Element {
                   />
 
                   <h2 className="font-heading text-center leading-normal text-2xl md:text-2xl tracking-wider font-semibold mt-5 text-slate-600 hover:text-primary transition-all hover:scale-105">
-                    Uma Jornada com a Constelação Familiar
+                    Constelação Familiar
                   </h2>
                   <p
                     className="leading-relaxed text-justify max-w-[550px] mx-auto tracking-wide text-base text-slate-500"
                     style={{ textIndent: '30px' }}
                   >
-                    Imagina poder enxergar além das aparências, compreender os
-                    laços familiares que moldam nossa jornada. É isso que a
-                    Constelação Familiar proporciona - uma viagem às raízes,
-                    onde o invisível se torna visível.
+                    A Constelação Familiar é uma abordagem terapêutica única que
+                    busca revelar os laços invisíveis que moldam nossos
+                    relacionamentos. Ao explorar as dinâmicas familiares e as
+                    energias sutis que as envolvem, podemos identificar padrões,
+                    compreender conflitos e promover a cura.
                   </p>
                 </a>
               </div>
               <div className="col-span-1 rounded-xl shadow-md bg-white p-4">
-                <a href="/blog/a-visao-holistica-na-terapia-integrativa">
+                <a href="/blog/thetahealing-na-pratica">
                   <Image
                     className="object-cover border-4 p-1 border-white rounded-lg shadow-2xl z-10 w-full h-auto mx-auto justify-center"
-                    src={blog3}
+                    src={blog12}
                     alt="Keyko Terapias pessoas na roda"
                     loading="lazy"
                     style={{
@@ -226,51 +226,26 @@ export default function Blog(): JSX.Element {
                   />
 
                   <h2 className="font-heading text-center leading-normal text-2xl md:text-2xl tracking-wider font-semibold mt-5 text-slate-600 hover:text-primary transition-all hover:scale-105">
-                    A Visão Holística na Terapia Integrativa
+                    Thetahealing na Prática
                   </h2>
                   <p
                     className="leading-relaxed text-justify max-w-[550px] mx-auto tracking-wide text-base text-slate-500"
                     style={{ textIndent: '30px' }}
                   >
-                    Na Terapia Integrativa, não tratamos apenas sintomas
-                    isolados; buscamos entender a complexidade da sua história,
-                    conectando cada peça do quebra-cabeça da sua saúde. É como
-                    uma dança harmoniosa entre os aspectos físicos, emocionais e
-                    espirituais.
+                    O Thetahealing é mais do que uma terapia; é uma jornada de
+                    descoberta interior. Nesse método, exploramos a onda
+                    cerebral theta, um estado profundo de relaxamento que
+                    permite acessar e reprogramar crenças limitantes. Ao longo
+                    dessa prática, tenho testemunhado verdadeiras revoluções na
+                    vida das pessoas.
                   </p>
                 </a>
               </div>
               <div className="col-span-1 rounded-xl shadow-md bg-white p-4">
-                <a href="/blog/leitura-de-aura-explorando-as-cores-da-alma">
+                <a href="/blog/libertacao-de-crencas-limitantes-o-processo">
                   <Image
                     className="object-cover border-4 p-1 border-white rounded-lg shadow-2xl z-10 w-full h-auto mx-auto justify-center"
-                    src={blog4}
-                    alt="Keyko Terapias pessoas na roda"
-                    loading="lazy"
-                    style={{
-                      width: '360px',
-                      height: '223px'
-                    }}
-                  />
-                  <h2 className="font-heading text-center leading-normal text-2xl md:text-2xl tracking-wider font-semibold mt-5 text-slate-600 hover:text-primary transition-all hover:scale-105">
-                    Explorando as Cores da Alma
-                  </h2>
-                  <p
-                    className="leading-relaxed text-justify max-w-[550px] mx-auto tracking-wide text-base text-slate-500"
-                    style={{ textIndent: '30px' }}
-                  >
-                    Entrar no fascinante mundo da Leitura de Aura é como abrir
-                    um livro cheio de mistérios e descobrir a linguagem única da
-                    sua alma. Cada cor revela uma história, uma emoção, uma
-                    parte da sua jornada.
-                  </p>
-                </a>
-              </div>
-              <div className="col-span-1 rounded-xl shadow-md bg-white p-4">
-                <a href="/blog/libertacao-de-crencas-limitantes">
-                  <Image
-                    className="object-cover border-4 p-1 border-white rounded-lg shadow-2xl z-10 w-full h-auto mx-auto justify-center"
-                    src={blog5}
+                    src={blog13}
                     alt="Keyko Terapias pessoas na roda"
                     loading="lazy"
                     style={{
@@ -285,10 +260,37 @@ export default function Blog(): JSX.Element {
                     className="leading-relaxed text-justify max-w-[550px] mx-auto tracking-wide text-base text-slate-500"
                     style={{ textIndent: '30px' }}
                   >
-                    Imagine que dentro de nós existem muros invisíveis, crenças
-                    que nos limitam e nos impedem de alcançar nosso potencial
-                    pleno. Romper essas barreiras é a essência das Terapias
-                    Integrativas.
+                    Antes de começarmos nossa jornada, é essencial entender o
+                    que são as crenças limitantes. São aquelas convicções que,
+                    muitas vezes inconscientemente, nos impedem de alcançar
+                    nosso verdadeiro potencial. Identificá-las é o primeiro
+                    passo para a libertação.
+                  </p>
+                </a>
+              </div>
+              <div className="col-span-1 rounded-xl shadow-md bg-white p-4">
+                <a href="/blog/harmonizando-a-vida--a-magia-dos-retiros-terapeuticos">
+                  <Image
+                    className="object-cover border-4 p-1 border-white rounded-lg shadow-2xl z-10 w-full h-auto mx-auto justify-center"
+                    src={blog15}
+                    alt="Keyko Terapias pessoas na roda"
+                    loading="lazy"
+                    style={{
+                      width: '360px',
+                      height: '223px'
+                    }}
+                  />
+                  <h2 className="font-heading text-center leading-normal text-2xl md:text-2xl tracking-wider font-semibold mt-5 text-slate-600 hover:text-primary transition-all hover:scale-105">
+                    A Magia dos Retiros Terapêuticos
+                  </h2>
+                  <p
+                    className="leading-relaxed text-justify max-w-[550px] mx-auto tracking-wide text-base text-slate-500"
+                    style={{ textIndent: '30px' }}
+                  >
+                    Imagine-se escapando da agitação cotidiana e entrando em um
+                    refúgio dedicado à introspecção e ao autodesenvolvimento. Os
+                    retiros terapêuticos oferecem exatamente isso - um ambiente
+                    propício para reconectar-se consigo mesmo e com a natureza.
                   </p>
                 </a>
               </div>

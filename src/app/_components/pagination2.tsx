@@ -6,7 +6,7 @@ import {
   PaginationLink,
   PaginationNext,
   PaginationPrevious
-} from '@/components/ui/pagination'
+} from '@/components/ui/pagination2'
 
 export function PaginationDemo() {
   return (
@@ -16,12 +16,12 @@ export function PaginationDemo() {
           <PaginationPrevious href="/blog" />
         </PaginationItem>
         <PaginationItem>
-          <PaginationLink href="/blog" isActive>
-            1
-          </PaginationLink>
+          <PaginationLink href="/blog">1</PaginationLink>
         </PaginationItem>
         <PaginationItem>
-          <PaginationLink href="/blog/page2">2</PaginationLink>
+          <PaginationLink href="/blog/page2" isActive>
+            2
+          </PaginationLink>
         </PaginationItem>
         <PaginationItem>
           <PaginationLink href="/blog/page3">3</PaginationLink>
@@ -30,7 +30,7 @@ export function PaginationDemo() {
           <PaginationEllipsis />
         </PaginationItem>
         <PaginationItem>
-          <PaginationNext href="/blog/page2" />
+          <PaginationNext href="/blog/page3" />
         </PaginationItem>
       </PaginationContent>
     </Pagination>
