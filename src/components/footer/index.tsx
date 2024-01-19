@@ -70,7 +70,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span className="font-semibold text-slate-600 hover:font-semibold hover:text-sky-600">
+              <span className="p-2 font-semibold text-slate-600 hover:font-semibold hover:text-sky-600">
                 Created by Vitor Bruno
               </span>
             </a>

@@ -128,7 +128,7 @@ export default function Home() {
                   </h3>
                 </div>
                 <div className="max-w-[350px] self-center">
-                  <p className="text-gray-500 text-center leading-relaxed  mt-2 mb-2">
+                  <p className="text-gray-500 leading-relaxed text-center mt-2 mb-2">
                     Orientação única para sua evolução. <br />
                     Cada sessão é moldada para <br />
                     desbloquear seu potencial <br /> máximo.
@@ -149,7 +149,7 @@ export default function Home() {
                   </h3>
                 </div>
                 <div className="max-w-[350px] self-center">
-                  <p className="text-gray-500 leading-relaxed  text-center mt-2 mb-2">
+                  <p className="text-gray-500 leading-relaxed text-center mt-2 mb-2">
                     Como uma flor que desabrocha,
                     <br />
                     liberte-se de bloqueios
