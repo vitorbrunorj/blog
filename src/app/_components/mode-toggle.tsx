@@ -60,14 +60,26 @@ export function ModeToggle() {
             Light Mode
           </DropdownMenuItem>
         )}
-        <DropdownMenuItem
-          className="hidden"
-          onSelect={() => {
-            setTheme('system')
-          }}
-        >
-          System
-        </DropdownMenuItem>
+        {theme === 'system' && (
+          <DropdownMenuItem
+            className=" "
+            onSelect={() => {
+              setTheme('light')
+            }}
+          >
+            Light Mode
+          </DropdownMenuItem>
+        )}
+        {theme === 'system' && (
+          <DropdownMenuItem
+            className=" "
+            onSelect={() => {
+              setTheme('dark')
+            }}
+          >
+            Dark Mode
+          </DropdownMenuItem>
+        )}
       </DropdownMenuContent>
       <ThemeStatus />
     </DropdownMenu>
